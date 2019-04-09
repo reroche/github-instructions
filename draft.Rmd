@@ -1,0 +1,180 @@
+---
+title: "Project 4: Github Instructions -- Draft"
+subtitle: "*__Carnegie Mellon University__*"
+author: "Cyrus Daruwala, Xiong-Fei Du, Elias Roche, Kylee Santos"
+date: "April 8, 2019"
+titlepage: true
+titlepage-color: "FFFFFF"
+titlepage-text-color: "2B303B"
+titlepage-rule-color: "658CB2"
+toc-own-page: true
+output:
+  pdf_document:
+    template: eisvogel
+    latex_engine: xelatex
+    highlight: tango
+    toc: true
+mainfont: Lato
+monofont: Ubuntu Mono
+fontsize: 12pt
+header-includes:
+  - \usepackage{booktabs}
+  - \usepackage{graphicx}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, out.width="90%", out.align="center")
+library(tidyverse)
+p <- . %>% knitr::include_graphics()
+```
+
+# Background Information
+
+TODO
+
+# Setting up your Account
+
+TODO
+
+---
+
+# Setting Up Git Repositories (Elias)
+
+## `git init`
+
+The `init` command creates an empty git repository -- a `.git` directory containing everything you need for version control in this repository.
+
+### Command Line
+
+To initialize a repository from the command line:
+
+1. Navigate to desired parent directory:
+  - *This directory will contain the git repository.*
+
+> ```bash
+> $ cd ~/cmu/76270/project4/
+> ```
+
+2. Create a directory for your repository:
+
+> ```bash
+> $ mkdir github-instructions
+> ```
+
+3. Navigate to new directory:
+
+> ```bash
+> $ cd github-instructions
+> ```
+
+4. Initialize the repository:
+
+> ```bash
+> $ git init
+> ```
+
+### GitHub
+
+On `github.com`, the `init` command is run automatically when a repository is created. Ensure that you are logged in before following these steps:
+
+1. Navigate to home page:
+  - [`http://github.com`](http://github.com)
+
+2. Click on the green **New** button on the top-left of the page:
+
+```{r}
+p("img/new-repository.png")
+```
+
+3. Enter a name for the repository:
+   - *The name of the repository must be unique to your user -- that is, you cannot give two repositories the same name.*
+
+4. Enter additional customizations:
+  - _You can include an optional description to provide more information about the purpose of the repository._
+  - _Repositories can be public (others can view and use your code), or private (only you and invited users can access the repository)._
+  - _`README.md`, `.gitignore`, and `LICENSE` are typical files to include in a repository. They are addressed in a later section._
+
+```{r}
+p("img/create-repository.png")
+```
+
+5. Click on **Create Repository** to complete.
+   - _The page will be redirected to the empty repositories home page._
+
+6. Finally, set up the repository:
+   - _You can create a new repository on the command line by running:_
+
+> ```bash
+> echo "# github-instructions" >> README.md
+> git init
+> git add README.md
+> git commit -m "first commit"
+> git remote add origin git@github.com:reroche/github-instructions.git
+> git push -u origin master
+> ```
+
+  - _Or you can import an existing repository on your computer into this GitHub new repository by running:_
+
+> ```bash
+> git remote add origin git@github.com:reroche/github-instructions.git
+> git push -u origin master
+> ```
+
+## `git clone`
+
+The `clone` command creates a copy of a of a repository into a newly created directory.
+
+All repositories on GitHub have a unique URL, in the format:
+
+> `https://github.com/`_username_`/`_repository-name_`.git`
+
+The repository for this instructions, for example, is available at [`https://github.com/reroche/github-instructions`](https://github.com/reroche/github-instructions).
+
+### Command Line
+
+To clone a repository from the command line:
+
+1. Navigate to the desired parent directory.
+
+> ```bash
+> $ cd ~/cmu/76270/project4/
+> ```
+
+2. Clone the repository using its GitHub URL:
+   - _The new repository will be in a directory with its original name (e.g._ `github-instructions`).
+
+> ```bash
+> $ git clone https://github.com/reroche/github-instructions.git
+> ```
+
+### GitHub
+
+The online interface allows you to easily browse and copy repository URLs to clone via the command line.
+
+To clone or download a repository from Github:
+
+1. Navigate to the repository URL:
+
+> `https://github.com/reactjs/reactjs.org`
+
+2. Click the green "Clone or Download" button:
+
+```{r}
+p("img/clone-repository.png")
+```
+
+3. Copy the link and clone from the command line, or download ZIP file.
+
+## Forking on GitHub
+
+Forking is copying a repository that belongs to another user into your repositories, granting you ownership permissions over that repository.
+
+Forking cannot be done via the command line.
+
+To fork a repository on Github, simply click the "Fork" button on the top right of a repository's home page.
+
+```{r}
+p("img/fork-repository.png")
+```
+
+---
