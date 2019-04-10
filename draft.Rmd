@@ -22,6 +22,8 @@ header-includes:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, out.width="90%", out.align="center")
 library(tidyverse)
+
+# USE THIS FUNCTION TO INSERT IMAGES!
 p <- . %>% knitr::include_graphics()
 ```
 
