@@ -24,6 +24,7 @@ header-includes:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, out.width="90%", out.align="center")
+knitr::opts_chunk$set(cache=FALSE)
 library(tidyverse)
 p <- . %>% knitr::include_graphics()
 ```
