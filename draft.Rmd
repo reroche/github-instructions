@@ -380,7 +380,7 @@ $ cd ~/cmu/76270/project4/github-instructions/
 ```bash
 $ git status
 ```
-The terminal output would look as follows:  
+The terminal output would look as follows:
 
 ```{r}
 p("img/git-status-prepush.PNG")
@@ -392,7 +392,7 @@ p("img/git-status-prepush.PNG")
 $ git push
 ```
 
-The terminal output would look as follows:  
+The terminal output would look as follows:
 
 ```{r}
 p("img/git-push.PNG")
@@ -406,7 +406,7 @@ p("img/git-status-postpush.PNG")
 
 
 ## `git pull`
-The git pull command is used to transfer changes pushed by other users on the remote repository to the user's local repository. This allows you to view everyone else's pushed changes in your local repo. 
+The git pull command is used to transfer changes pushed by other users on the remote repository to the user's local repository. This allows you to view everyone else's pushed changes in your local repo.
 
 1. Navigate to desired directory:
 
@@ -414,7 +414,7 @@ The git pull command is used to transfer changes pushed by other users on the re
 $ cd ~/cmu/76270/project4/github-instructions/
 ```
 
-2. To obtain changes made by other users:  
+2. To obtain changes made by other users:
 
 ```bash
 $ git pull
