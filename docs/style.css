@@ -23,7 +23,7 @@ h1.title {
 
 #header p.author {
   margin: 0;
-  font-size: 1.7em;
+  font-size: 1.7em !important;
 }
 
 #header p.date {
@@ -185,4 +185,8 @@ blockquote > p:first-child {
 .highlight pre .vi { color: #00688B } /* Name.Variable.Instance */
 .highlight pre .vm { color: #00688B } /* Name.Variable.Magic */
 .highlight pre .il { color: #B452CD } /* Literal.Number.Integer.Long */
-.highlight pre .bu { color: #003F6F } /* No Clue LMAO */
+
+/* My Shit */
+
+span .bu { color: #003F6F }
+span .fu { color: #003F6F }
