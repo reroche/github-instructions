@@ -19,21 +19,27 @@ $ cd ~/cmu/76270/project4/
 
 2. Create a directory for your repository:
 
+<div class="mycommand">
 ```bash
 $ mkdir github-instructions
 ```
+</div>
 
 3. Navigate to new directory:
 
+<div class="mycommand">
 ```bash
 $ cd github-instructions
 ```
+</div>
 
 4. Initialize the repository:
 
+<div class="mycommand">
 ```bash
 $ git init
 ```
+</div>
 
 ### GitHub {-}
 
