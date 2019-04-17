@@ -11,9 +11,11 @@ To initialize a repository from the command line:
 1. Navigate to desired parent directory:
   - *This directory will contain the git repository.*
 
+<div class="mycommand">
 ```bash
 $ cd ~/cmu/76270/project4/
 ```
+</div>
 
 2. Create a directory for your repository:
 

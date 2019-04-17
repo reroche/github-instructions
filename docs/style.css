@@ -68,7 +68,11 @@ p.caption {
 pre, code {
   font-family: 'Ubuntu Mono', monospace !important;
   line-height: 1.2;
-  left: 100px;
+}
+
+.mycommand {
+  width: 90%;
+  left: 60px;
 }
 
 p code {
