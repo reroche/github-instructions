@@ -1,0 +1,25 @@
+---
+title: "Project 4: Github Instructions -- Draft"
+subtitle: "**Carnegie Mellon University**"
+author: "Cyrus Daruwala, Xiong-Fei Du, Elias Roche, Kylee Santos"
+date: "`r gsub(' 0', ' ', format(Sys.Date(), '%B %d, %Y'))`"
+site: bookdown::bookdown_site
+documentclass: book
+github-repo: "reroche/github-instructions"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, out.width="90%", fig.align="center",
+                      cache=FALSE)
+
+library(tidyverse)
+
+# Function for inserting images
+p <- . %>% knitr::include_graphics()
+```
+
+# Welcome {-}
+
+Art party 8-bit kitsch flexitarian fam vexillologist semiotics. Fanny pack farm-to-table messenger bag blog four dollar toast meh knausgaard scenester man bun keytar XOXO biodiesel deep v woke. Authentic unicorn four dollar toast la croix, tilde plaid fashion axe health goth. Umami man braid stumptown, succulents hashtag hell of cred. Air plant gastropub locavore, heirloom viral woke scenester gentrify. Ugh iPhone heirloom cold-pressed, health goth church-key intelligentsia readymade brooklyn williamsburg flexitarian pop-up wolf. Taiyaki keytar 3 wolf moon paleo fixie, biodiesel next level.
+
+Af scenester aesthetic, typewriter kinfolk literally pickled enamel pin post-ironic heirloom prism mlkshk cliche copper mug migas. Disrupt polaroid kombucha intelligentsia. Vinyl VHS selfies skateboard artisan. Roof party asymmetrical put a bird on it, raw denim bitters sartorial disrupt austin biodiesel thundercats hell of poke twee mumblecore seitan. Squid franzen raw denim fashion axe meh fam vegan schlitz. Shoreditch 90's twee, 8-bit thundercats trust fund craft beer ennui poutine poke pok pok vaporware kinfolk tacos.

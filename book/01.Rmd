@@ -1,51 +1,10 @@
----
-title: "Project 4: Github Instructions -- Draft"
-subtitle: "**Carnegie Mellon University**"
-author: "Cyrus Daruwala, Xiong-Fei Du, Elias Roche, Kylee Santos"
-date: "April 8, 2019"
-output:
-  html_document:
-    theme: spacelab
-    latex_engine: xelatex
-    highlight: tango
-    toc: true
-    toc_depth: 3
-    toc_float: true
-mainfont: Lato
-monofont: Ubuntu Mono
-fontsize: 12pt
-header-includes:
-  - \usepackage{booktabs}
-  - \usepackage{graphicx}
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo=FALSE, out.width="90%", out.align="center")
-library(tidyverse)
-
-# USE THIS FUNCTION TO INSERT IMAGES!
-p <- . %>% knitr::include_graphics()
-```
-
-# Background Information
-
-TODO
-
----
-
-# Setting up your Account
-
-TODO
-
----
-
-# Setting Up Git Repositories (Elias)
+# Setting Up Git Repositories (Elias) {#setting-up-repos}
 
 ## `git init`
 
 The `init` command creates an empty git repository -- a `.git` directory containing everything you need for version control in this repository.
 
-#### Command Line
+### Command Line {-}
 
 To initialize a repository from the command line:
 
@@ -74,9 +33,9 @@ $ cd github-instructions
 $ git init
 ```
 
-#### GitHub
+### GitHub {-}
 
-On `github.com`, the `init` command is run automatically when a repository is created. **Ensure that you are logged in before following these steps**:
+On `github.com`, the `init` command is run automatically when a repository is created. Ensure that you are logged in before following these steps:
 
 1. Navigate to home page:
   - [`http://github.com`](http://github.com)
@@ -106,19 +65,19 @@ p("img/create-repository.png")
    - _You can create a new repository on the command line by running:_
 
 ```bash
-$ echo "# github-instructions" >> README.md
-$ git init
-$ git add README.md
-$ git commit -m "first commit"
-$ git remote add origin git@github.com:reroche/github-instructions.git
-$ git push -u origin master
+echo "# github-instructions" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:reroche/github-instructions.git
+git push -u origin master
 ```
 
   - _Or you can import an existing repository on your computer into this GitHub new repository by running:_
 
 ```bash
-$ git remote add origin git@github.com:reroche/github-instructions.git
-$ git push -u origin master
+git remote add origin git@github.com:reroche/github-instructions.git
+git push -u origin master
 ```
 
 ## `git clone`
@@ -131,7 +90,7 @@ All repositories on GitHub have a unique URL, in the format:
 
 The repository for this instructions, for example, is available at [`https://github.com/reroche/github-instructions`](https://github.com/reroche/github-instructions).
 
-#### Command Line
+### Command Line {-}
 
 To clone a repository from the command line:
 
@@ -148,7 +107,7 @@ $ cd ~/cmu/76270/project4/
 $ git clone https://github.com/reroche/github-instructions.git
 ```
 
-#### GitHub
+### GitHub {-}
 
 The online interface allows you to easily browse and copy repository URLs to clone via the command line.
 
@@ -178,4 +137,3 @@ To fork a repository on Github, simply click the "Fork" button on the top right 
 p("img/fork-repository.png")
 ```
 
----

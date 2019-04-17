@@ -1,0 +1,10 @@
+book_filename: "book"
+repo: https://github.com/reroche/github-instructions
+output_dir: "../docs"
+link-citations: true
+language:
+  ui:
+    edit: "Edit"
+
+new_session: no
+before_chapter_script: "_common.R"

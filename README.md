@@ -1,11 +1,13 @@
 # Project 4: Github Instructions
 
-Write your section in `draft.Rmd`.
+The HTML version of the book is in the `docs` directory.
 
-Elias - Setting up Git repositories
+The `book` directory contains the markdown files. It also has other configuration files if you feel like tweaking anything. Ask Elias if you have questions about how to use the files. If you have `R` installed, the `build` executable will compile the guide.
 
-Kylee - Making changes
+- **Elias**: `01.Rmd` -- Setting up Git repositories
 
-Xiong-Fei - Tools for working locally
+- **Kylee**: `02.Rmd` -- Making changes
 
-Cyrus - Syncing your local files with github
+- **Xiong-Fei**: `03.Rmd` -- Tools for working locally
+
+- **Cyrus**: `04.Rmd` -- Syncing your local files with github
