@@ -198,17 +198,55 @@ The `add` command allows users to add files to the staging area (Step 2). This e
 
 However, using the `add` command does not actually save the changes yet. That functionality is done by `git commit`.
 
+Here are a few ways to use the `git add` command: (1) Adding files individually, (2) Adding all previously tracked files, (3) Adding all files (both tracked and untracked).
+
+(1) Adding files individually
+> ```bash
+> $ git add draft.Rmd draft.html
+> ```
+_NOTE:_ If you include multiple files, they must be separated by a space.
+
+(2) Adding all previously tracked files
+> ```bash
+> $ git add .
+> ```
+
+(3) Adding all files (both tracked and untracked)
+> ```bash
+> $ git add -A
+> ```
+
+Tracked files are files that are included in the remote git repository. So, if you make changes to any of those files, they are already tracked.
+
+However, if you create new files locally in the root directory, these files are untracked. Since you just created them, git does not track them since they are not yet in the remote git repository.
+
+
 ## `git commit`
 
-The `commit` command actually saves any changes to files you made. In conjunction with `git add`, the `commit` command will save all files that you have added to the staging area.
+The `commit` command actually saves any changes to files you made. In conjunction with `git add`, the `commit` command will save all files that you have previously added to the staging area.
 
 Each commit is a snapshot, or a saved state, of your repository. Commits also require messages or captions to go along with them, usually describing the kinds of changes made.
 
-This is beneficial if you are looking at all of your previous commits and want to see what changes you made in each one.
+This is beneficial if later on you are looking at all of your previous commits and want to see what changes you made in each one. Because these commit messages are so useful, there are two ways to write them.
+
+(1) One-line commit message
+> ```bash
+> $ git commit -m "Update add, commit, status sections in draft"
+> ```
+
+(2) Multi-line commit message
+> ```bash
+> $ git commit
+> ```
+
+```{r}
+p("img/git-commit.png")
+```
 
 ## `git status`
 
 The `status` command allows you to display any changes you have made to the directory you are currently working in. It details which changes have been staged (using `git add`), which changes have not, and which files are not being tracked by Git.
+
 Essentially, you will be able to see which files Git will save if you were to commit. This allows you to first, see which files you have changed, and second, confirm all the files you want/don't want to track.
 
 
@@ -216,38 +254,14 @@ Essentially, you will be able to see which files Git will save if you were to co
 
 Going back to the high level procedure of how to make changes, here is an example of how to use these commands in conjunction.
 
-Suppose I am working on a repository called `Video Search Engine` with the following directory tree.
+Suppose I am working on a repository called `github-instructions` and I have just made changes to the `README.md` and `draft.Rmd` files.
+
+Using `git status` gives me a summary of the files I have changed, and further `git add` can move these changes to the staging area to be committed.
+
+Using `git status` once again will now display an updates summary displayed that the files are now in the staging area. Finally, I can save these changes with a one-line commit message.
 
 ```{r}
-p("img/list-repository.png")
-```
-
-I made some changes in the files `preprocessing/parser.py`, `README.md`, and `requirements.txt`. I also added some videos to run my code on for testing purposes.
-
-I can use `git status` to give me a summary of the files that I have changed.
-
-```{r}
-p("img/git-status-1.png")
-```
-
-I can use `git add` to add the files that I changed to the staging area.
-
-I added `preprocessing/parser.py`, `README.md`, and `requirements.txt` but I left out the `videos` because those were only for local testing and I do not want to actually save them to Git.
-
-If I `git status` again, I can see the files that I have added to the staging area, the ones in green being the ones that I would save on commit.
-
-```{r}
-p("img/git-status-2.png")
-```
-
-Finally, I can save the changes using `git commit` and provide a helpful message to describe what my changes did.
-
-```{r}
-p("img/git-commit-1.png")
-```
-
-```{r}
-p("img/git-commit-2.png")
+p("img/workflow.png")
 ```
 
 And just like that, we have successfully saved changes to our repository!
