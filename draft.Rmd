@@ -198,20 +198,20 @@ The `add` command allows users to add files to the staging area (Step 2). This e
 
 However, using the `add` command does not actually save the changes yet. That functionality is done by `git commit`.
 
-Here are a few ways to use the `git add` command: (1) Adding files individually, (2) Adding all previously tracked files, (3) Adding all files (both tracked and untracked).
+Here are a few ways to use the `git add` command: (1) Adding new or modified files individually, (2) Adding all tracked and untracked files in the working directory, (4) Adding all tracked and untracked files (new, modified, and deleted).
 
 (1) Adding files individually
 > ```bash
-> $ git add draft.Rmd draft.html
+> $ git add README.md draft.Rmd
 > ```
 _NOTE:_ If you include multiple files, they must be separated by a space.
 
-(2) Adding all previously tracked files
+(2) Adding all tracked and untracked files in the working directory
 > ```bash
 > $ git add .
 > ```
 
-(3) Adding all files (both tracked and untracked)
+(3) Adding all tracked and untracked files (new, modified, and deleted)
 > ```bash
 > $ git add -A
 > ```
@@ -261,7 +261,7 @@ Using `git status` gives me a summary of the files I have changed, and further `
 Using `git status` once again will now display an updates summary displayed that the files are now in the staging area. Finally, I can save these changes with a one-line commit message.
 
 ```{r}
-p("img/workflow.png")
+p("img/git-workflow.png")
 ```
 
 And just like that, we have successfully saved changes to our repository!

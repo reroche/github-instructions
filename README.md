@@ -8,4 +8,4 @@ Kylee - Making changes
 
 Xiong-Fei - Tools for working locally
 
-Cyrus - Syncing your local files with Github
+Cyrus - Syncing your local files with github
