@@ -21,12 +21,12 @@ h1.title {
   margin-bottom: 0em;
 }
 
-#header h4.author {
+#header p.author {
   margin: 0;
   font-size: 1.7em;
 }
 
-#header h4.date {
+#header p.date {
   margin: 0;
   color: #666;
 }
@@ -68,6 +68,7 @@ p.caption {
 pre, code {
   font-family: 'Ubuntu Mono', monospace !important;
   line-height: 1.2;
+  left: 100px;
 }
 
 p code {
@@ -184,3 +185,4 @@ blockquote > p:first-child {
 .highlight pre .vi { color: #00688B } /* Name.Variable.Instance */
 .highlight pre .vm { color: #00688B } /* Name.Variable.Magic */
 .highlight pre .il { color: #B452CD } /* Literal.Number.Integer.Long */
+.highlight pre .bu { color: #003F6F } /* No Clue LMAO */
