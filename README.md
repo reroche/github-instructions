@@ -6,7 +6,7 @@ Click [here](https://reroche.github.io/github-instructions/) to see it in the br
 
 Or go to `https://reroche.github.io/github-instructions/`.
 
-The `book` directory contains the markdown files. It also has other configuration files if you feel like tweaking anything. Ask Elias if you have questions about how to use the files. If you have `R` installed, the `build` executable will compile the guide.
+The `book` directory contains the markdown files. It also has other configuration files if you feel like tweaking anything. Ask Elias if you have questions about how to use the files.
 
 - **Elias**: `01.Rmd` -- Setting up Git repositories
 
@@ -15,3 +15,5 @@ The `book` directory contains the markdown files. It also has other configuratio
 - **Xiong-Fei**: `03.Rmd` -- Tools for working locally
 
 - **Cyrus**: `04.Rmd` -- Syncing your local files with github
+
+If you have `R` installed, the `build` executable will compile the guide.
