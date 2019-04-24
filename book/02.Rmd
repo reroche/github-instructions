@@ -2,13 +2,13 @@
 
 When making changes to a repository, generally a combination of `git add`, `git commit`, and `git status` will be used. The high level procedure for making changes is the following:
 
-Step 1. Make edits to files in the repository.
+  1. Make edits to files in the repository.
 
-Step 2. Add edited files to the staging area.
+  2. Add edited files to the staging area.
 
-Step 3. Check which files have been staged/unstaged.
+  3. Check which files have been staged/unstaged.
 
-Step 4. Save these changes in a commit.
+  4. Save these changes in a commit.
 
 ## `git add`
 
@@ -18,22 +18,13 @@ However, using the `add` command does not actually save the changes yet. That fu
 
 ### Command Line
 
-Here are a few ways to use the `git add` command: (1) Adding new or modified files individually, (2) Adding all tracked and untracked files in the working directory, (3) Adding all tracked and untracked files (new, modified, and deleted).
-
-(1) Adding files individually
+(1) Adding files individually _NOTE:_ If you include multiple files, they must be separated by a space.
 ```bash
 $ git add README.md draft.Rmd
 ```
-_NOTE:_ If you include multiple files, they must be separated by a space.
 
 
-(2) Adding all tracked and untracked files in the working directory
-```bash
-$ git add .
-```
-
-
-(3) Adding all tracked and untracked files (new, modified, and deleted)
+(2) Adding all tracked and untracked files (new, modified, and deleted)
 ```bash
 $ git add -A
 ```
