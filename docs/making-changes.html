@@ -25,7 +25,7 @@
 <meta name="author" content="Cyrus Daruwala, Xiong-Fei Du, Elias Roche, Kylee Santos">
 
 
-<meta name="date" content="2019-04-17">
+<meta name="date" content="2019-04-24">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -197,26 +197,34 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="making-changes" class="section level1">
 <h1><span class="header-section-number">2</span> Making Changes (Kylee)</h1>
 <p>When making changes to a repository, generally a combination of <code>git add</code>, <code>git commit</code>, and <code>git status</code> will be used. The high level procedure for making changes is the following:</p>
-<ol style="list-style-type: decimal">
-<li><p>Make edits to files in the repository.</p></li>
-<li><p>Add edited files to the staging area so Git knows that you have changes there that you would like to save.</p></li>
-<li><p>Check which files have been staged/unstaged.</p></li>
-<li><p>Save these changes in a commit.</p></li>
-</ol>
+<p>Step 1. Make edits to files in the repository.</p>
+<p>Step 2. Add edited files to the staging area.</p>
+<p>Step 3. Check which files have been staged/unstaged.</p>
+<p>Step 4. Save these changes in a commit.</p>
 <div id="git-add" class="section level2">
 <h2><span class="header-section-number">2.1</span> <code>git add</code></h2>
 <p>The <code>add</code> command allows users to add files to the staging area (Step 2). This essentially lets Git know that you made changes to the file and you would like to save them.</p>
 <p>However, using the <code>add</code> command does not actually save the changes yet. That functionality is done by <code>git commit</code>.</p>
-<p>Here are a few ways to use the <code>git add</code> command: (1) Adding new or modified files individually, (2) Adding all tracked and untracked files in the working directory, (4) Adding all tracked and untracked files (new, modified, and deleted).</p>
+<p>Here are a few ways to use the <code>git add</code> command: (1) Adding new or modified files individually, (2) Adding all tracked and untracked files in the working directory, (3) Adding all tracked and untracked files (new, modified, and deleted).</p>
 <ol style="list-style-type: decimal">
-<li><p>Adding files individually
-&gt; <code>bash &gt; $ git add README.md draft.Rmd &gt;</code>
-<em>NOTE:</em> If you include multiple files, they must be separated by a space.</p></li>
-<li><p>Adding all tracked and untracked files in the working directory
-&gt; <code>bash &gt; $ git add . &gt;</code></p></li>
-<li><p>Adding all tracked and untracked files (new, modified, and deleted)
-&gt; <code>bash &gt; $ git add -A &gt;</code></p></li>
+<li>Adding files individually
+<div class="mycommand"></li>
 </ol>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> add README.md draft.Rmd</code></pre>
+</div>
+<p><em>NOTE:</em> If you include multiple files, they must be separated by a space.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Adding all tracked and untracked files in the working directory</li>
+</ol>
+<div class="mycommand">
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> add .</code></pre>
+</div>
+<ol start="3" style="list-style-type: decimal">
+<li>Adding all tracked and untracked files (new, modified, and deleted)
+<div class="mycommand"></li>
+</ol>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> add -A</code></pre>
+</div>
 <p>Tracked files are files that are included in the remote git repository. So, if you make changes to any of those files, they are already tracked.</p>
 <p>However, if you create new files locally in the root directory, these files are untracked. Since you just created them, git does not track them since they are not yet in the remote git repository.</p>
 </div>
@@ -226,11 +234,17 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>Each commit is a snapshot, or a saved state, of your repository. Commits also require messages or captions to go along with them, usually describing the kinds of changes made.</p>
 <p>This is beneficial if later on you are looking at all of your previous commits and want to see what changes you made in each one. Because these commit messages are so useful, there are two ways to write them.</p>
 <ol style="list-style-type: decimal">
-<li><p>One-line commit message
-&gt; <code>bash &gt; $ git commit -m "Update add, commit, status sections in draft" &gt;</code></p></li>
-<li><p>Multi-line commit message
-&gt; <code>bash &gt; $ git commit &gt;</code></p></li>
+<li>One-line commit message
+<div class="mycommand"></li>
 </ol>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> commit -m <span class="st">&quot;Update add, commit, status sections in draft&quot;</span></code></pre>
+</div>
+<ol start="2" style="list-style-type: decimal">
+<li>Multi-line commit message
+<div class="mycommand"></li>
+</ol>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> commit</code></pre>
+</div>
 <p><img src="img/git-commit.png" width="90%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="git-status" class="section level2">
