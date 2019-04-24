@@ -38,7 +38,7 @@ $ git init
 On `github.com`, the `init` command is run automatically when a repository is created. Ensure that you are logged in before following these steps:
 
 1. Navigate to home page:
-  - [`http://github.com`](http://github.com)
+   - [`http://github.com`](http://github.com)
 
 2. Click on the green **New** button on the top-left of the page:
 
@@ -50,16 +50,17 @@ p("img/new-repository.png")
    - *The name of the repository must be unique to your user -- that is, you cannot give two repositories the same name.*
 
 4. Enter additional customizations:
-  - _You can include an optional description to provide more information about the purpose of the repository._
-  - _Repositories can be public (others can view and use your code), or private (only you and invited users can access the repository)._
-  - _`README.md`, `.gitignore`, and `LICENSE` are typical files to include in a repository. They are addressed in a later section._
+   - _You can include an optional description to provide more information about the purpose of the repository._
+   - _Repositories can be public (others can view and use your code), or private (only you and invited users can access the repository)._
+   - _`README.md`, `.gitignore`, and `LICENSE` are typical files to include in a repository. They are addressed in a later section._
+
+5. Click on **Create Repository** to complete.
+   - _The page will be redirected to the empty repositories home page._
 
 ```{r}
 p("img/create-repository.png")
 ```
 
-5. Click on **Create Repository** to complete.
-   - _The page will be redirected to the empty repositories home page._
 
 6. Finally, set up the repository:
 
@@ -125,6 +126,10 @@ p("img/clone-repository.png")
 ```
 
 3. Copy the link and clone from the command line, or download ZIP file.
+
+```bash
+$ git clone https://github.com/reroche/github-instructions.git
+```
 
 ## Forking on GitHub
 
