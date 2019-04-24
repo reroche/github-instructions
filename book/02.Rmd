@@ -16,19 +16,22 @@ The `add` command allows users to add files to the staging area (Step 2). This e
 
 However, using the `add` command does not actually save the changes yet. That functionality is done by `git commit`.
 
+### Command Line
+
 Here are a few ways to use the `git add` command: (1) Adding new or modified files individually, (2) Adding all tracked and untracked files in the working directory, (3) Adding all tracked and untracked files (new, modified, and deleted).
 
 (1) Adding files individually
 ```bash
 $ git add README.md draft.Rmd
 ```
-
 _NOTE:_ If you include multiple files, they must be separated by a space.
+
 
 (2) Adding all tracked and untracked files in the working directory
 ```bash
 $ git add .
 ```
+
 
 (3) Adding all tracked and untracked files (new, modified, and deleted)
 ```bash
@@ -48,10 +51,13 @@ Each commit is a snapshot, or a saved state, of your repository. Commits also re
 
 This is beneficial if later on you are looking at all of your previous commits and want to see what changes you made in each one. Because these commit messages are so useful, there are two ways to write them.
 
+### Command Line
+
 (1) One-line commit message
 ```bash
 $ git commit -m "Update add, commit, status sections in draft"
 ```
+
 
 (2) Multi-line commit message
 ```bash
