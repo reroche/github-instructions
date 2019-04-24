@@ -1,50 +1,12 @@
-# Syncing your local files with Github (Cyrus) {#syncing-github}
+# Tools for Working Locally (Xiong-Fei) {#tools-local}
 
-## `git push`
+## `git stash`
 
-The `git push` command is used to trasfer committed changes from a local repository to a remote repository. This allows you to make your changes available to the rest of the users of the repository.
+The `stash` command stores away your current local changes to revert to the previous commit. This is typically done when you have made changes to a repository that you have not committed, but want to undo.
 
 ### Command Line
 
-1. Navigate to desired directory:
-
-```bash
-$ cd ~/cmu/76270/project4/github-instructions/
-```
-
-2. Before continuing, make sure that you have committed your changes you want to push using `git commit`. To check the number of unpushed local commits:
-
-```bash
-$ git status
-```
-The terminal output would look as follows:
-
-```{r}
-p("img/git-status-prepush.PNG")
-```
-
-3. In the result above, it says that our branch (the local repository) is ahead of origin/master (the remote repository) by 1 commit. To push these changes:
-
-```bash
-$ git push
-```
-
-The terminal output would look as follows:
-
-```{r}
-p("img/git-push.PNG")
-```
-
-4. If we now check the number of unpushed local commits using `git status`, we notice that our branch is up to date (0 commits behind) with 'origin/master'.
-
-```{r}
-p("img/git-status-postpush.PNG")
-```
-
-
-## `git pull`
-
-The git pull command is used to transfer changes pushed by other users on the remote repository to the user's local repository. This allows you to view everyone else's pushed changes in your local repo.
+Suppose you already have local changes in the repository that you want to stash away. To stash changes in command line:
 
 1. Navigate to desired directory:
 
@@ -52,15 +14,95 @@ The git pull command is used to transfer changes pushed by other users on the re
 $ cd ~/cmu/76270/project4/github-instructions/
 ```
 
-2. To obtain changes made by other users:
+2. Clear uncommitted changes:
 
 ```bash
-$ git pull
+$ git stash
 ```
 
-The resulting terminal output:
+Now observe that your local changes are now gone. To bring these changes back, you can run the following command:
+
+```bash
+$ git stash pop
+```
+
+
+## `git log`
+
+The `log` command allows you to see the history of commits made to your repository.
+
+### Command Line
+
+To see the history of commits:
+
+1. Navigate to desired directory:
+
+```bash
+$ cd ~/cmu/76270/project4/github-instructions/
+```
+
+2. To view commit history:
+
+```bash
+$ git log
+```
+
+Now observe the history of commits to this repository. What you will see in your terminal is a series of commits in the following format.
 
 ```{r}
-p("img/git-pull.PNG")
+p("img/git-log.PNG")
 ```
+
+Each commit has a commit hash, the user who made the commit, the time of the commit, and the commit message. The name of the branch, the commit hash, and the commit message are denoted in the above figure.
+
+
+### GitHub
+
+We can also see a log of our commits in Github. This can be done as follows:
+
+1. From the homepage of your Git repository on Github, click on the "Commits" tab:
+
+```{r}
+p("img/commit-navigation.PNG")
+```
+
+2. Now we can see the history of commits, in the following format:
+
+```{r}
+p("img/github-commits.PNG")
+```
+
+3. To view a commit in more detail, click on the commit message. Now you will see how that commit modified the files in our repository. The lines highlighted in red denotes what was removed, and lines highlighted in green show what was added:
+
+```{r}
+p("img/github-diffs.PNG")
+```
+
+## `git diff`
+
+The `diff` command allows you to see local changes you have made, but not yet committed, to your repository.
+
+### Command Line
+
+To see your local changes:
+
+1. Navigate to desired directory:
+
+```bash
+$ cd ~/cmu/76270/project4/github-instructions/
+```
+
+2. To view local changes:
+
+```bash
+$ git diff
+```
+
+Now observe your local changes to this repository. The file name is highlighted in the following figure. Meanwhile, lines with red text show the contents of the file that were deleted while lines with green text show the added content since your last commit.
+
+```{r}
+p("img/git-diff.PNG")
+```
+
+While you are in `diff`, you may hit the Enter or Return key to see more lines of differences. You may also hit Q to exit.
 
