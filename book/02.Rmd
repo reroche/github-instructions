@@ -19,28 +19,21 @@ However, using the `add` command does not actually save the changes yet. That fu
 Here are a few ways to use the `git add` command: (1) Adding new or modified files individually, (2) Adding all tracked and untracked files in the working directory, (3) Adding all tracked and untracked files (new, modified, and deleted).
 
 (1) Adding files individually
-<div class="mycommand">
 ```bash
 $ git add README.md draft.Rmd
 ```
-</div>
 
 _NOTE:_ If you include multiple files, they must be separated by a space.
 
 (2) Adding all tracked and untracked files in the working directory
-
-<div class="mycommand">
 ```bash
 $ git add .
 ```
-</div>
 
 (3) Adding all tracked and untracked files (new, modified, and deleted)
-<div class="mycommand">
 ```bash
 $ git add -A
 ```
-</div>
 
 Tracked files are files that are included in the remote git repository. So, if you make changes to any of those files, they are already tracked.
 
@@ -56,18 +49,14 @@ Each commit is a snapshot, or a saved state, of your repository. Commits also re
 This is beneficial if later on you are looking at all of your previous commits and want to see what changes you made in each one. Because these commit messages are so useful, there are two ways to write them.
 
 (1) One-line commit message
-<div class="mycommand">
 ```bash
 $ git commit -m "Update add, commit, status sections in draft"
 ```
-</div>
 
 (2) Multi-line commit message
-<div class="mycommand">
 ```bash
 $ git commit
 ```
-</div>
 
 ```{r}
 p("img/git-commit.png")
