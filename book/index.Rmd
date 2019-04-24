@@ -8,8 +8,8 @@ github-repo: "reroche/github-instructions"
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo=FALSE, out.width="90%", fig.align="center",
-                      cache=FALSE)
+knitr::opts_chunk$set(echo=FALSE, out.width="90%",
+                      fig.align="center", cache=TRUE)
 
 library(tidyverse)
 

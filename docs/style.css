@@ -192,5 +192,6 @@ blockquote > p:first-child {
 
 /* My Shit */
 
-span .bu { color: #003F6F }
-span .fu { color: #003F6F }
+span.bu { color: #CD5555 !important}
+span.fu { color: #CD5555 !important}
+pre.sourceCode.bash { margin-left: 30px !important; margin-right: 30px !important}
