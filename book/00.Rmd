@@ -1,10 +1,15 @@
-# Preface {-}
+# Terminology and Workflow {-}
+
+## Glossary of Terms {-}
+
+
+Williamsburg iceland narwhal plaid leggings pickled direct trade portland pork belly. Pour-over jianbing sustainable iceland PBR&B before they sold out umami chambray shabby chic. Cornhole normcore cliche roof party copper mug. +1 chambray iPhone, enamel pin quinoa kogi green juice ugh taxidermy bitters coloring book irony salvia.
 
 ## Background Information {-}
 
 Williamsburg iceland narwhal plaid leggings pickled direct trade portland pork belly. Pour-over jianbing sustainable iceland PBR&B before they sold out umami chambray shabby chic. Cornhole normcore cliche roof party copper mug. +1 chambray iPhone, enamel pin quinoa kogi green juice ugh taxidermy bitters coloring book irony salvia.
 
-### Example Workflow {-}
+## Workflow {-}
 
 ```{r}
 p("img/git-flowchart.png")

@@ -25,7 +25,7 @@
 <meta name="author" content="Cyrus Daruwala, Xiong-Fei Du, Elias Roche, Kylee Santos">
 
 
-<meta name="date" content="2019-04-24">
+<meta name="date" content="2019-04-25">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -129,11 +129,14 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">GitHub Instructions</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a><ul>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#background-information"><i class="fa fa-check"></i>Background Information</a><ul>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#example-workflow"><i class="fa fa-check"></i>Example Workflow</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#who-this-guide-is-for"><i class="fa fa-check"></i><b>0.1</b> Who This Guide Is For</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#what-you-need-to-get-started"><i class="fa fa-check"></i><b>0.2</b> What You Need To Get Started</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="terminology-and-workflow.html"><a href="terminology-and-workflow.html"><i class="fa fa-check"></i>Terminology and Workflow</a><ul>
+<li class="chapter" data-level="" data-path="terminology-and-workflow.html"><a href="terminology-and-workflow.html#glossary-of-terms"><i class="fa fa-check"></i>Glossary of Terms</a></li>
+<li class="chapter" data-level="" data-path="terminology-and-workflow.html"><a href="terminology-and-workflow.html#background-information"><i class="fa fa-check"></i>Background Information</a></li>
+<li class="chapter" data-level="" data-path="terminology-and-workflow.html"><a href="terminology-and-workflow.html#workflow"><i class="fa fa-check"></i>Workflow</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="setting-up-repos.html"><a href="setting-up-repos.html"><i class="fa fa-check"></i><b>1</b> Setting Up Git Repositories (Elias)</a><ul>
 <li class="chapter" data-level="1.1" data-path="setting-up-repos.html"><a href="setting-up-repos.html#git-init"><i class="fa fa-check"></i><b>1.1</b> <code>git init</code></a><ul>
@@ -154,7 +157,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.2.1" data-path="making-changes.html"><a href="making-changes.html#command-line-3"><i class="fa fa-check"></i><b>2.2.1</b> Command Line</a></li>
 </ul></li>
 <li class="chapter" data-level="2.3" data-path="making-changes.html"><a href="making-changes.html#git-status"><i class="fa fa-check"></i><b>2.3</b> <code>git status</code></a><ul>
-<li class="chapter" data-level="2.3.1" data-path="making-changes.html"><a href="making-changes.html#workflow"><i class="fa fa-check"></i><b>2.3.1</b> Workflow</a></li>
+<li class="chapter" data-level="2.3.1" data-path="making-changes.html"><a href="making-changes.html#workflow-1"><i class="fa fa-check"></i><b>2.3.1</b> Workflow</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="syncing-github.html"><a href="syncing-github.html"><i class="fa fa-check"></i><b>3</b> Syncing your local files with Github (Cyrus)</a><ul>
@@ -244,7 +247,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">2.3</span> <code>git status</code></h2>
 <p>The <code>status</code> command allows you to display any changes you have made to the directory you are currently working in. It details which changes have been staged (using <code>git add</code>), which changes have not, and which files are not being tracked by Git.</p>
 <p>Essentially, you will be able to see which files Git will save if you were to commit. This allows you to first, see which files you have changed, and second, confirm all the files you want/don’t want to track.</p>
-<div id="workflow" class="section level3">
+<div id="workflow-1" class="section level3">
 <h3><span class="header-section-number">2.3.1</span> Workflow</h3>
 <p>Going back to the high level procedure of how to make changes, here is an example of how to use these commands in conjunction.</p>
 <p>Suppose I am working on a repository called <code>github-instructions</code> and I have just made changes to the <code>README.md</code> and <code>draft.Rmd</code> files.</p>
