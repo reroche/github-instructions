@@ -18,7 +18,7 @@ However, using the `add` command does not actually save the changes yet. That fu
 
 ### Command Line
 
-(1) Adding files individually _NOTE:_ If you include multiple files, they must be separated by a space.
+(1) Adding files individually _(NOTE: If you include multiple files, they must be separated by a space.)_
 ```bash
 $ git add README.md draft.Rmd
 ```
@@ -70,7 +70,7 @@ Essentially, you will be able to see which files Git will save if you were to co
 
 Going back to the high level procedure of how to make changes, here is an example of how to use these commands in conjunction.
 
-Suppose I am working on a repository called `github-instructions` and I have just made changes to the `README.md` and `draft.Rmd` files.
+Suppose I am working on a repository called `github-instructions` and I have just made changes to `README.md` and `draft.Rmd`, deleted a few image files, and also added new image files.
 
 Using `git status` gives me a summary of the files I have changed, and further `git add` can move these changes to the staging area to be committed.
 
