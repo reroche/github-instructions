@@ -2,21 +2,23 @@
 
 ## Glossary of Terms {-}
 
-| Term            |                                                                                                      Definition                                                                                                      |
-|-----------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Term            | Definition                                                                                                                                                                                                           |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Git             |                                                                                                                                                                                                                      |
 | GitHub          |                                                                                                                                                                                                                      |
 | Repository      |                                                                                                                                                                                                                      |
 | Remote          |                                                                                                                                                                                                                      |
 | Local           |                                                                                                                                                                                                                      |
 | Directory       |                                                                                                                                                                                                                      |
-| Staging Area    |                              Collection of files that user wants to save the changes of. Files must first be added to the staging area before their changes can be saved into a commit.                              |
-| Tracked Files   |                                                 Files in your working directory that Git saves in its repository and checks to see if changes have been made to them.                                                |
+| Staging Area    | Collection of files that user wants to save the changes of. Files must first be added to the staging area before their changes can be saved into a commit.                                                           |
+| Tracked Files   | Files in your working directory that Git saves in its repository and checks to see if changes have been made to them.                                                                                                |
 | Untracked Files | Files in your working directory that are unknown to Git, therefore any changes to these files are not recorded. Any time a user creates a new file, it starts as an untracked file until it is add using  `git add`. |
-| Commit          |                                 A collection of saved changes that a user has made. After adding files to the staging area, these changes can actually be saved using  `git commit`.                                 |
-| Commit Message  |                                                                             String of characters chosen by the user to label the commit.                                                                             |
-| Commit Hash     |                                                            String of automatically-generated alpha-numeric characters that Git uses to identify a commit.                                                            |
-| Branch          |               A branch is a series of commits in a project. Developers usually have multiple branches if they want to maintain different versions of a project. The default branch is called  `master`.              |
+| Commit          | A collection of saved changes that a user has made. After adding files to the staging area, these changes can actually be saved using  `git commit`.                                                                 |
+| Commit Message  | String of characters chosen by the user to label the commit.                                                                                                                                                         |
+| Commit Hash     | String of automatically-generated alpha-numeric characters that Git uses to identify a commit.                                                                                                                       |
+| Branch          | A branch is a series of commits in a project. Developers usually have multiple branches if they want to maintain different versions of a project. The default branch is called  `master`.                            |
+| Terminal        |                                                                                                                                                                                                                      |
+| Command Line    |                                                                                                                                                                                                                      |
 
 ## Workflow {-}
 
