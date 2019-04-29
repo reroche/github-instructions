@@ -18,20 +18,24 @@ However, using the `add` command does not actually save the changes yet. That fu
 
 ### Command Line
 
-(1) Adding files individually _(NOTE: If you include multiple files, they must be separated by a space.)_
-```bash
-$ git add README.md draft.Rmd
-```
+You can add files in terminal either individually or all at once.
+
+(1) Adding files individually _(NOTE: If you include multiple files, they must be separated by a space.)_. For example, this command will add `README.md` and `draft.Rmd` to the staging area:
+
+    ```bash
+    $ git add README.md draft.Rmd
+    ```
 
 
 (2) Adding all tracked and untracked files (new, modified, and deleted)
-```bash
-$ git add -A
-```
 
-Tracked files are files that are included in the remote git repository. So, if you make changes to any of those files, they are already tracked.
+    ```bash
+    $ git add -A
+    ```
 
-However, if you create new files locally in the root directory, these files are untracked. Since you just created them, git does not track them since they are not yet in the remote git repository.
+Tracked files are files that are included in the remote Git repository. So, if you make changes to any of those files, they are already tracked.
+
+However, if you create new files locally in the root directory, these files are untracked. Since you just created them, Git does not track them since they are not yet in the remote Git repository.
 
 
 ## `git commit`
@@ -40,20 +44,28 @@ The `commit` command actually saves any changes to files you made. In conjunctio
 
 Each commit is a snapshot, or a saved state, of your repository. Commits also require messages or captions to go along with them, usually describing the kinds of changes made.
 
+Commit messages are meant to help you, the user, identify different commits, so you should choose a helpful commit message.
+
 This is beneficial if later on you are looking at all of your previous commits and want to see what changes you made in each one. Because these commit messages are so useful, there are two ways to write them.
+
+Before proceeding, make sure that you have run `git add` to stage all of the changes you want to commit.
 
 ### Command Line
 
+There are two different ways of making a commit:
+
 (1) One-line commit message
-```bash
-$ git commit -m "Update add, commit, status sections in draft"
-```
+
+    ```bash
+    $ git commit -m "Update add, commit, status sections in draft"
+    ```
 
 
-(2) Multi-line commit message
-```bash
-$ git commit
-```
+(2) Multi-line commit message. _Note: If you choose to commit your changes this way, Git will enter a `vim`-like editor for you to edit the commit message. You should only choose this method if you are comfortable with using `vim`._
+
+    ```bash
+    $ git commit
+    ```
 
 ```{r}
 p("img/git-commit.png")

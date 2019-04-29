@@ -25,7 +25,7 @@
 <meta name="author" content="Cyrus Daruwala, Xiong-Fei Du, Elias Roche, Kylee Santos">
 
 
-<meta name="date" content="2019-04-25">
+<meta name="date" content="2019-04-29">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -131,7 +131,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
 <li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#who-this-guide-is-for"><i class="fa fa-check"></i><b>0.1</b> Who This Guide Is For</a></li>
-<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#what-you-need-to-get-started"><i class="fa fa-check"></i><b>0.2</b> What You Need To Get Started</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#why-should-i-learn-git"><i class="fa fa-check"></i><b>0.2</b> Why Should I Learn Git?</a></li>
+<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#what-you-need-to-get-started"><i class="fa fa-check"></i><b>0.3</b> What You Need To Get Started</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="terminology-and-workflow.html"><a href="terminology-and-workflow.html"><i class="fa fa-check"></i>Terminology and Workflow</a><ul>
 <li class="chapter" data-level="" data-path="terminology-and-workflow.html"><a href="terminology-and-workflow.html#glossary-of-terms"><i class="fa fa-check"></i>Glossary of Terms</a></li>
@@ -202,23 +203,21 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">3</span> Syncing your local files with Github (Cyrus)</h1>
 <div id="git-push" class="section level2">
 <h2><span class="header-section-number">3.1</span> <code>git push</code></h2>
-<p>The <code>git push</code> command is used to trasfer committed changes from a local repository to a remote repository. This allows you to make your changes available to the rest of the users of the repository.</p>
+<p>The <code>git push</code> command is used to upload your commits from a local repository to a remote repository. This allows you to make your changes available to the rest of the users of the repository.</p>
 <div id="command-line-4" class="section level3">
 <h3><span class="header-section-number">3.1.1</span> Command Line</h3>
 <ol style="list-style-type: decimal">
-<li>Navigate to desired directory:</li>
-</ol>
-<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">cd</span> ~/cmu/76270/project4/github-instructions/</code></pre>
-<ol start="2" style="list-style-type: decimal">
-<li>Before continuing, make sure that you have committed your changes you want to push using <code>git commit</code>. To check the number of unpushed local commits:</li>
-</ol>
+<li><p>Navigate to desired directory:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">cd</span> ~/cmu/76270/project4/github-instructions/</code></pre></li>
+<li><p>Before continuing, make sure that you have committed your changes you want to push using <code>git commit</code>. To check the number of unpushed local commits:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> status</code></pre>
-<p>The terminal output would look as follows:</p>
+<p>The terminal output would look as follows:</p></li>
+</ol>
 <p><img src="img/git-status-prepush.PNG" width="90%" style="display: block; margin: auto;" /></p>
 <ol start="3" style="list-style-type: decimal">
-<li>In the result above, it says that our branch (the local repository) is ahead of origin/master (the remote repository) by 1 commit. To push these changes:</li>
+<li><p>In the result above, it says that our branch (the local repository) is ahead of <code>origin/master</code> (the remote repository) by 1 commit. To push these changes:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> push</code></pre></li>
 </ol>
-<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> push</code></pre>
 <p>The terminal output would look as follows:</p>
 <p><img src="img/git-push.PNG" width="90%" style="display: block; margin: auto;" /></p>
 <ol start="4" style="list-style-type: decimal">
@@ -229,17 +228,16 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="git-pull" class="section level2">
 <h2><span class="header-section-number">3.2</span> <code>git pull</code></h2>
-<p>The git pull command is used to transfer changes pushed by other users on the remote repository to the user’s local repository. This allows you to view everyone else’s pushed changes in your local repo.</p>
+<p>The <code>git pull</code> command is used to transfer changes pushed by other users on the remote repository to the user’s local repository. This allows you to view everyone else’s pushed changes in your local repo.</p>
 <ol style="list-style-type: decimal">
-<li>Navigate to desired directory:</li>
-</ol>
-<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">cd</span> ~/cmu/76270/project4/github-instructions/</code></pre>
-<ol start="2" style="list-style-type: decimal">
-<li>To obtain changes made by other users:</li>
-</ol>
+<li><p>Navigate to desired directory:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">cd</span> ~/cmu/76270/project4/github-instructions/</code></pre></li>
+<li><p>To obtain changes made by other users:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> pull</code></pre>
-<p>The resulting terminal output:</p>
-<p><img src="img/git-pull.PNG" width="90%" style="display: block; margin: auto;" /></p>
+<p>The resulting terminal output:
+<img src="img/git-pull.PNG" width="90%" style="display: block; margin: auto;" /></p>
+<p>Note that the green <code>+</code> represents a line added and a red <code>-</code> represents a line deleted.</p></li>
+</ol>
 
 </div>
 </div>

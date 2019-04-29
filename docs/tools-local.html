@@ -25,7 +25,7 @@
 <meta name="author" content="Cyrus Daruwala, Xiong-Fei Du, Elias Roche, Kylee Santos">
 
 
-<meta name="date" content="2019-04-25">
+<meta name="date" content="2019-04-29">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -131,7 +131,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
 <li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#who-this-guide-is-for"><i class="fa fa-check"></i><b>0.1</b> Who This Guide Is For</a></li>
-<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#what-you-need-to-get-started"><i class="fa fa-check"></i><b>0.2</b> What You Need To Get Started</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#why-should-i-learn-git"><i class="fa fa-check"></i><b>0.2</b> Why Should I Learn Git?</a></li>
+<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#what-you-need-to-get-started"><i class="fa fa-check"></i><b>0.3</b> What You Need To Get Started</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="terminology-and-workflow.html"><a href="terminology-and-workflow.html"><i class="fa fa-check"></i>Terminology and Workflow</a><ul>
 <li class="chapter" data-level="" data-path="terminology-and-workflow.html"><a href="terminology-and-workflow.html#glossary-of-terms"><i class="fa fa-check"></i>Glossary of Terms</a></li>
@@ -207,15 +208,13 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h3><span class="header-section-number">4.1.1</span> Command Line</h3>
 <p>Suppose you already have local changes in the repository that you want to stash away. To stash changes in command line:</p>
 <ol style="list-style-type: decimal">
-<li>Navigate to desired directory:</li>
-</ol>
-<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">cd</span> ~/cmu/76270/project4/github-instructions/</code></pre>
-<ol start="2" style="list-style-type: decimal">
-<li>Clear uncommitted changes:</li>
-</ol>
+<li><p>Navigate to desired directory:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">cd</span> ~/cmu/76270/project4/github-instructions/</code></pre></li>
+<li><p>Clear uncommitted changes:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> stash</code></pre>
 <p>Now observe that your local changes are now gone. To bring these changes back, you can run the following command:</p>
-<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> stash pop</code></pre>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> stash pop</code></pre></li>
+</ol>
 </div>
 </div>
 <div id="git-log" class="section level2">
@@ -225,16 +224,14 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h3><span class="header-section-number">4.2.1</span> Command Line</h3>
 <p>To see the history of commits:</p>
 <ol style="list-style-type: decimal">
-<li>Navigate to desired directory:</li>
-</ol>
-<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">cd</span> ~/cmu/76270/project4/github-instructions/</code></pre>
-<ol start="2" style="list-style-type: decimal">
-<li>To view commit history:</li>
-</ol>
+<li><p>Navigate to desired directory:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">cd</span> ~/cmu/76270/project4/github-instructions/</code></pre></li>
+<li><p>To view commit history:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> log</code></pre>
-<p>Now observe the history of commits to this repository. What you will see in your terminal is a series of commits in the following format.</p>
-<p><img src="img/git-log.PNG" width="90%" style="display: block; margin: auto;" /></p>
-<p>Each commit has a commit hash, the user who made the commit, the time of the commit, and the commit message. The name of the branch, the commit hash, and the commit message are denoted in the above figure.</p>
+<p>Now observe the history of commits to this repository. What you will see in your terminal is a series of commits in the following format:
+<img src="img/git-log.PNG" width="90%" style="display: block; margin: auto;" /></p>
+<p>Each commit has a commit hash, the user who made the commit, the time of the commit, and the commit message. The name of the branch, the commit hash, and the commit message are denoted in the above figure.</p></li>
+</ol>
 </div>
 <div id="github-2" class="section level3">
 <h3><span class="header-section-number">4.2.2</span> GitHub</h3>
@@ -260,16 +257,14 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h3><span class="header-section-number">4.3.1</span> Command Line</h3>
 <p>To see your local changes:</p>
 <ol style="list-style-type: decimal">
-<li>Navigate to desired directory:</li>
-</ol>
-<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">cd</span> ~/cmu/76270/project4/github-instructions/</code></pre>
-<ol start="2" style="list-style-type: decimal">
-<li>To view local changes:</li>
-</ol>
+<li><p>Navigate to desired directory:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">cd</span> ~/cmu/76270/project4/github-instructions/</code></pre></li>
+<li><p>To view local changes:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> diff</code></pre>
-<p>Now observe your local changes to this repository. The file name is highlighted in the following figure. Meanwhile, lines with red text show the contents of the file that were deleted while lines with green text show the added content since your last commit.</p>
-<p><img src="img/git-diff.PNG" width="90%" style="display: block; margin: auto;" /></p>
-<p>While you are in <code>diff</code>, you may hit the Enter or Return key to see more lines of differences. You may also hit Q to exit.</p>
+<p>Now observe your local changes to this repository. The file name is highlighted in the following figure. Meanwhile, lines with red text show the contents of the file that were deleted while lines with green text show the added content since your last commit.
+<img src="img/git-diff.PNG" width="90%" style="display: block; margin: auto;" /></p>
+<p>While you are in <code>diff</code>, you may hit the Enter or Return key to see more lines of differences. You may also hit Q to exit.</p></li>
+</ol>
 
 </div>
 </div>

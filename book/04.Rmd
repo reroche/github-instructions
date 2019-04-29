@@ -10,21 +10,21 @@ Suppose you already have local changes in the repository that you want to stash 
 
 1. Navigate to desired directory:
 
-```bash
-$ cd ~/cmu/76270/project4/github-instructions/
-```
+    ```bash
+    $ cd ~/cmu/76270/project4/github-instructions/
+    ```
 
 2. Clear uncommitted changes:
 
-```bash
-$ git stash
-```
+    ```bash
+    $ git stash
+    ```
 
-Now observe that your local changes are now gone. To bring these changes back, you can run the following command:
+    Now observe that your local changes are now gone. To bring these changes back, you can run the following command:
 
-```bash
-$ git stash pop
-```
+    ```bash
+    $ git stash pop
+    ```
 
 
 ## `git log`
@@ -37,23 +37,22 @@ To see the history of commits:
 
 1. Navigate to desired directory:
 
-```bash
-$ cd ~/cmu/76270/project4/github-instructions/
-```
+    ```bash
+    $ cd ~/cmu/76270/project4/github-instructions/
+    ```
 
 2. To view commit history:
 
-```bash
-$ git log
-```
+    ```bash
+    $ git log
+    ```
 
-Now observe the history of commits to this repository. What you will see in your terminal is a series of commits in the following format.
-
+    Now observe the history of commits to this repository. What you will see in your terminal is a series of commits in the following format:
 ```{r}
 p("img/git-log.PNG")
 ```
 
-Each commit has a commit hash, the user who made the commit, the time of the commit, and the commit message. The name of the branch, the commit hash, and the commit message are denoted in the above figure.
+    Each commit has a commit hash, the user who made the commit, the time of the commit, and the commit message. The name of the branch, the commit hash, and the commit message are denoted in the above figure.
 
 
 ### GitHub
@@ -88,21 +87,20 @@ To see your local changes:
 
 1. Navigate to desired directory:
 
-```bash
-$ cd ~/cmu/76270/project4/github-instructions/
-```
+    ```bash
+    $ cd ~/cmu/76270/project4/github-instructions/
+    ```
 
 2. To view local changes:
 
-```bash
-$ git diff
-```
+    ```bash
+    $ git diff
+    ```
 
-Now observe your local changes to this repository. The file name is highlighted in the following figure. Meanwhile, lines with red text show the contents of the file that were deleted while lines with green text show the added content since your last commit.
-
+    Now observe your local changes to this repository. The file name is highlighted in the following figure. Meanwhile, lines with red text show the contents of the file that were deleted while lines with green text show the added content since your last commit.
 ```{r}
 p("img/git-diff.PNG")
 ```
 
-While you are in `diff`, you may hit the Enter or Return key to see more lines of differences. You may also hit Q to exit.
+    While you are in `diff`, you may hit the Enter or Return key to see more lines of differences. You may also hit Q to exit.
 

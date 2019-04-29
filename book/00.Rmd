@@ -20,9 +20,11 @@
 
 - Commit - A collection of saved changes that a user has made. After adding files to the staging area, these changes can actually be saved using `git commit`.
 
-- Branch
+- Commit message - A commit message is a string of characters chosen by the user to label the commit.
 
-- Commit hash
+- Commit hash - A commit hash is a string of automatically-generated alpha-numeric characters that Git uses to identify a commit.
+
+- Branch - A branch is a series of commits in a project. Developers usually have multiple branches if they want to maintain different versions of a project. The default branch is called `master`.
 
 ## Background Information {-}
 

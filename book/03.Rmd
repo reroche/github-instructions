@@ -2,32 +2,33 @@
 
 ## `git push`
 
-The `git push` command is used to trasfer committed changes from a local repository to a remote repository. This allows you to make your changes available to the rest of the users of the repository.
+The `git push` command is used to upload your commits from a local repository to a remote repository. This allows you to make your changes available to the rest of the users of the repository.
+
 
 ### Command Line
 
 1. Navigate to desired directory:
 
-```bash
-$ cd ~/cmu/76270/project4/github-instructions/
-```
+    ```bash
+    $ cd ~/cmu/76270/project4/github-instructions/
+    ```
 
 2. Before continuing, make sure that you have committed your changes you want to push using `git commit`. To check the number of unpushed local commits:
 
-```bash
-$ git status
-```
+    ```bash
+    $ git status
+    ```
 The terminal output would look as follows:
 
 ```{r}
 p("img/git-status-prepush.PNG")
 ```
 
-3. In the result above, it says that our branch (the local repository) is ahead of origin/master (the remote repository) by 1 commit. To push these changes:
+3. In the result above, it says that our branch (the local repository) is ahead of `origin/master` (the remote repository) by 1 commit. To push these changes:
 
-```bash
-$ git push
-```
+    ```bash
+    $ git push
+    ```
 
 The terminal output would look as follows:
 
@@ -44,23 +45,24 @@ p("img/git-status-postpush.PNG")
 
 ## `git pull`
 
-The git pull command is used to transfer changes pushed by other users on the remote repository to the user's local repository. This allows you to view everyone else's pushed changes in your local repo.
+The `git pull` command is used to transfer changes pushed by other users on the remote repository to the user's local repository. This allows you to view everyone else's pushed changes in your local repo.
 
 1. Navigate to desired directory:
 
-```bash
-$ cd ~/cmu/76270/project4/github-instructions/
-```
+    ```bash
+    $ cd ~/cmu/76270/project4/github-instructions/
+    ```
 
 2. To obtain changes made by other users:
 
-```bash
-$ git pull
-```
+    ```bash
+    $ git pull
+    ```
 
-The resulting terminal output:
-
+    The resulting terminal output:
 ```{r}
 p("img/git-pull.PNG")
 ```
+
+    Note that the green `+` represents a line added and a red `-` represents a line deleted.
 
