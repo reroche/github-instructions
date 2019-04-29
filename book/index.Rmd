@@ -19,16 +19,16 @@ p <- . %>% knitr::include_graphics()
 
 # Welcome {-}
 
-## Who This Guide Is For
+## Who This Guide Is For {-}
 
 If you are someone who is familiar with a Unix-like terminal environment and wants to learn Git, then this guide is for you. If you are a CMU student who has taken 15-110 Principles of Computing or 15-122 Principles of Imperative Computation, then you have worked in a Unix-like terminal environment. This guide provides instructions on how to use Git and Github, which will help you manage your coding projects as you take more advanced coursework. Knowledge of Git will come in handy if you take 15-213/18-213 Introduction to Computer Systems or any 400+ level systems elective.
 
-## Why Should I Learn Git?
+## Why Should I Learn Git? {-}
 
 Git is a version control system that allows users to manage a coding project in a distributed manner. Git will allow you to keep track of previous changes to your code. Additionally, Git allows multiple users to collaborate on a coding project. Using Git, you can easily keep track of who made a change, what changes were made, and when someone made changes. The tools that Git provides makes it easy for a large team of developers to collaborate.
 
 Git is widely used in the software industry, and many employers will assume knowledge of Git as you enter a software position.
 
-## What You Need To Get Started
+## What You Need To Get Started {-}
 
 Af scenester aesthetic, typewriter kinfolk literally pickled enamel pin post-ironic heirloom prism mlkshk cliche copper mug migas. Disrupt polaroid kombucha intelligentsia. Vinyl VHS selfies skateboard artisan. Roof party asymmetrical put a bird on it, raw denim bitters sartorial disrupt austin biodiesel thundercats hell of poke twee mumblecore seitan. Squid franzen raw denim fashion axe meh fam vegan schlitz. Shoreditch 90's twee, 8-bit thundercats trust fund craft beer ennui poutine poke pok pok vaporware kinfolk tacos.
