@@ -1,4 +1,4 @@
-# Making Changes (Kylee) {#making-changes}
+# Making Changes {#making-changes}
 
 When making changes to a repository, generally a combination of `git status`, `git add`, and `git commit` will be used. The high level procedure for making changes is the following:
 

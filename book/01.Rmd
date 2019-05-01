@@ -1,4 +1,4 @@
-# Setting Up Git Repositories (Elias) {#setting-up-repos}
+# Setting Up Git Repositories {#setting-up-repos}
 
 ## `git init`
 

@@ -1,4 +1,4 @@
-# Syncing your local files with Github (Cyrus) {#syncing-github}
+# Syncing your local files with Github {#syncing-github}
 
 ## `git push`
 

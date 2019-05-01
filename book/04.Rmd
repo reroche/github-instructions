@@ -1,4 +1,4 @@
-# Tools for Working Locally (Xiong-Fei) {#tools-local}
+# Tools for Working Locally {#tools-local}
 
 ## `git stash`
 
