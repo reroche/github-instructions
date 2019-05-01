@@ -22,34 +22,34 @@
 
 ## Workflow {-}
 
-To get a better idea of how this process might work in its use cases, consider the following series of events that is commonly used with this tool.
+To get a better idea of how this process might work in its use cases, here is an example of how the tool is commonly used.
 
-Two users want to create a repository, work on some of the files individually, and combine their changes for the final product.
+Consider the case where two users want to create a repository, work on some of the files individually, and combine their changes for the final product. This can be accomplished by performing the following steps. An illustration of how these commands interact with the actual repository is also included below.
 
 
 (1) One of the users calls `git init` to create the repository.
 
-(2) User 1 calls `git clone` to copy the created remote repository so that they can work on their local computer.
+(2) **User 1** calls `git clone` to copy the created remote repository so that they can work on their local computer.
 
-(3) User 2 also calls `git clone` to copy the created remote repository locally.
+(3) **User 2** also calls `git clone` to copy the created remote repository locally.
 
-(4) User 1 starts the progress by adding some files to the repository.
+(4) **User 1** starts the project by adding some files to the repository.
 
-(5) User 1 calls `git add` to add these new files to the staging area so that git knows which files should be saved.
+(5) **User 1** calls `git add` to add these new files to the staging area so that git knows which files should be saved.
 
-(6) User 1 calls `git commit` to save the changes in the staging area into a commit.
+(6) **User 1** calls `git commit` to save the changes in the staging area into a commit.
 
-(7) User 1 calls `git push` to upload their changes from their local computer to the remote repository so both users can see the changes.
+(7) **User 1** calls `git push` to upload their changes from their local computer to the remote repository so both users can see the changes.
 
-(8) User 2 calls `git pull` to download the changes made from the remote repository to their local computer and works on the latest version of the repository.
+(8) **User 2** calls `git pull` to download the changes made from the remote repository to their local computer and works on the latest version of the repository.
 
-(9) User 2 edits some of the files and creates their own files.
+(9) **User 2** edits some of the files and creates their own files.
 
-(10) User 2 calls `git add` to include these files in the staging area.
+(10) **User 2** calls `git add` to include these files in the staging area.
 
-(11) User 2 calls `git commit` to save the changes locally into a commit.
+(11) **User 2** calls `git commit` to save the changes locally into a commit.
 
-(12) User 2 calls `git push` to upload their changes to the remote repository for both users to see.
+(12) **User 2** calls `git push` to upload their changes to the remote repository for both users to see.
 
 
 This workflow is also detailed in the diagram below:
@@ -58,4 +58,3 @@ This workflow is also detailed in the diagram below:
 ```{r}
 p("img/git-flowchart.png")
 ```
-
