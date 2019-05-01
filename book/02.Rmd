@@ -1,18 +1,20 @@
 # Making Changes (Kylee) {#making-changes}
 
-When making changes to a repository, generally a combination of `git add`, `git commit`, and `git status` will be used. The high level procedure for making changes is the following:
+When making changes to a repository, generally a combination of `git status`, `git add`, and `git commit` will be used. The high level procedure for making changes is the following:
 
   1. Make edits to files in the repository.
 
-  2. Add edited files to the staging area.
+  2. Check which files have been added/modified/deleted and which files have been staged/unstaged.
 
-  3. Check which files have been staged/unstaged.
+  3. Add edited files to the staging area.
 
   4. Save these changes in a commit.
 
+In order to understand the output of `git status`, it helps to know how the commands `git add` and `git commit` work first.
+
 ## `git add`
 
-The `add` command allows users to add files to the staging area (Step 2). This essentially lets Git know that you made changes to the file and you would like to save them.
+The `add` command allows users to add files to the staging area (Step 3). This essentially lets Git know that you made changes to the file and you would like to save them.
 
 However, using the `add` command does not actually save the changes yet. That functionality is done by `git commit`.
 
@@ -20,10 +22,10 @@ However, using the `add` command does not actually save the changes yet. That fu
 
 You can add files in terminal either individually or all at once.
 
-(1) Adding files individually _(NOTE: If you include multiple files, they must be separated by a space.)_ For example, this command will add `README.md` and `draft.Rmd` to the staging area:
+(1) Adding files individually _(NOTE: If you include multiple files, they must be separated by a space.)_ For example, this command will add `README.md` and `book/02.Rmd` to the staging area:
 
     ```bash
-    $ git add README.md draft.Rmd
+    $ git add README.md book/02.Rmd
     ```
 
 
@@ -38,7 +40,7 @@ Tracked files are files that are included in the remote Git repository. So, Git 
 
 ## `git commit`
 
-The `commit` command actually saves any changes to files you made. In conjunction with `git add`, the `commit` command will save all files that you have previously added to the staging area. Each commit is a snapshot, or a saved state, of your repository. Commits also require messages or captions to go along with them, usually describing the kinds of changes made.
+The `commit` command actually saves any changes to files you made (Step 4). In conjunction with `git add`, the `commit` command will save all files that you have previously added to the staging area. Each commit is a snapshot, or a saved state, of your repository. Commits also require messages or captions to go along with them, usually describing the kinds of changes made.
 
 Commit messages are meant to help you, the user, identify different commits, so you should choose a helpful commit message. This is beneficial if later on you are looking at all of your previous commits and want to see what changes you made in each one. Because these commit messages are so useful, there are two ways to write them.
 
@@ -67,7 +69,7 @@ p("img/git-commit.png")
 
 ## `git status`
 
-The `status` command allows you to display any changes you have made to the directory you are currently working in. It details which changes have been staged (using `git add`), which changes have not, and which files are not being tracked by Git.
+The `status` command allows you to display any changes you have made to the directory you are currently working in (Step 2). It details which changes have been staged (using `git add`), which changes have not, and which files are not being tracked by Git.
 
 Essentially, you will be able to see which files Git will save if you were to commit. This allows you to first, see which files you have changed, and second, confirm all the files you want/don't want to track.
 
