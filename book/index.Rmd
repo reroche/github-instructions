@@ -29,9 +29,9 @@ Git is a version control system that allows users to manage a coding project in 
 
 Git is widely used in the software industry, and many employers will assume knowledge of Git as you enter a software position.
 
-## What You Need To Get Started {-}
+## What You Need To Get Started With Git {-}
 
-(1) **A Unix-like environment:** This guide contains many commands that can be copied directly into Unix-like command lines. MacOS and Linux are both Unix-like environments. A Unix-like environment can be set up in Windows, but that is beyond the scope of these instructions.
+(1) **A Unix-like environment:** This guide contains many commands that can be copied directly into Unix-like command lines. MacOS and Linux are both Unix-like environments. A Unix-like environment can be set up in Windows by installing Git Bash, which can be downloaded [here](https://gitforwindows.org/).
 
 (2) **A GitHub account:** A GitHub account is free and will allow you to host unlimited public repositories. Using your CMU email address (or any address with a `.edu` suffix) will grant you free access to a GitHub premium account, which allows you to host private repositories as well. It is strongly encouraged that you use your CMU email address to create an account before proceeding with this guide. Click [here](https://github.com/join?source=header-home) to create your account.
 
