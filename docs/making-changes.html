@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>2 Making Changes (Kylee) | Project 4: Github Instructions – Draft</title>
-  <meta name="description" content="2 Making Changes (Kylee) | Project 4: Github Instructions – Draft">
+  <title>2 Making Changes (Kylee) | Project 4: Github Instructions</title>
+  <meta name="description" content="2 Making Changes (Kylee) | Project 4: Github Instructions">
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="2 Making Changes (Kylee) | Project 4: Github Instructions – Draft" />
+  <meta property="og:title" content="2 Making Changes (Kylee) | Project 4: Github Instructions" />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +17,7 @@
   <meta name="github-repo" content="reroche/github-instructions" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2 Making Changes (Kylee) | Project 4: Github Instructions – Draft" />
+  <meta name="twitter:title" content="2 Making Changes (Kylee) | Project 4: Github Instructions" />
   
   
   
@@ -25,7 +25,7 @@
 <meta name="author" content="Cyrus Daruwala, Xiong-Fei Du, Elias Roche, Kylee Santos">
 
 
-<meta name="date" content="2019-04-29">
+<meta name="date" content="2019-05-01">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -131,7 +131,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#who-this-guide-is-for"><i class="fa fa-check"></i>Who This Guide Is For</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#why-should-i-learn-git"><i class="fa fa-check"></i>Why Should I Learn Git?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#why-should-i-learn-git"><i class="fa fa-check"></i>Why Should I Learn Git</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#what-you-need-to-get-started"><i class="fa fa-check"></i>What You Need To Get Started</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="terminology-and-workflow.html"><a href="terminology-and-workflow.html"><i class="fa fa-check"></i>Terminology and Workflow</a><ul>
@@ -190,7 +190,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Project 4: Github Instructions – Draft</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Project 4: Github Instructions</a>
           </h1>
         </div>
 
@@ -200,40 +200,42 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="making-changes" class="section level1">
 <h1><span class="header-section-number">2</span> Making Changes (Kylee)</h1>
-<p>When making changes to a repository, generally a combination of <code>git add</code>, <code>git commit</code>, and <code>git status</code> will be used. The high level procedure for making changes is the following:</p>
+<p>When making changes to a repository, generally a combination of <code>git status</code>, <code>git add</code>, and <code>git commit</code> will be used. The high level procedure for making changes is the following:</p>
 <ol style="list-style-type: decimal">
 <li><p>Make edits to files in the repository.</p></li>
+<li><p>Check which files have been added/modified/deleted and which files have been staged/unstaged.</p></li>
 <li><p>Add edited files to the staging area.</p></li>
-<li><p>Check which files have been staged/unstaged.</p></li>
 <li><p>Save these changes in a commit.</p></li>
 </ol>
+<p>In order to understand the output of <code>git status</code>, it helps to know how the commands <code>git add</code> and <code>git commit</code> work first.</p>
 <div id="git-add" class="section level2">
 <h2><span class="header-section-number">2.1</span> <code>git add</code></h2>
-<p>The <code>add</code> command allows users to add files to the staging area (Step 2). This essentially lets Git know that you made changes to the file and you would like to save them.</p>
+<p>The <code>add</code> command allows users to add files to the staging area (Step 3). This essentially lets Git know that you made changes to the file and you would like to save them.</p>
 <p>However, using the <code>add</code> command does not actually save the changes yet. That functionality is done by <code>git commit</code>.</p>
 <div id="command-line-2" class="section level3">
 <h3><span class="header-section-number">2.1.1</span> Command Line</h3>
-<p>You can add files in terminal either individually or all at once.</p>
+<p>First, open Terminal and navigate to desired directory:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">cd</span> ~/cmu/76270/project4/github-instructions/</code></pre>
+<p>Now you are ready to add files. You can add files in terminal either individually or all at once.</p>
 <ol style="list-style-type: decimal">
-<li><p>Adding files individually <em>(NOTE: If you include multiple files, they must be separated by a space.)</em>. For example, this command will add <code>README.md</code> and <code>draft.Rmd</code> to the staging area:</p>
-<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> add README.md draft.Rmd</code></pre></li>
-<li><p>Adding all tracked and untracked files (new, modified, and deleted)</p>
+<li><p>Adding files individually <em>(NOTE: If you include multiple files, they must be separated by a space.)</em> For example, this command will add <code>README.md</code> and <code>book/02.Rmd</code> to the staging area:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> add README.md book/02.Rmd</code></pre></li>
+<li><p>Adding all tracked and untracked files in this repository (new, modified, and deleted)</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> add -A</code></pre></li>
 </ol>
-<p>Tracked files are files that are included in the remote Git repository. So, if you make changes to any of those files, they are already tracked.</p>
-<p>However, if you create new files locally in the root directory, these files are untracked. Since you just created them, Git does not track them since they are not yet in the remote Git repository.</p>
+<p>Tracked files are files that are included in the remote Git repository. So, Git will be able to track and record any changes made to these files. However, if you create new files locally, these files are untracked. Since you just created them, Git cannot track them since they are not yet in the remote Git repository. You must use the <code>git add</code> command in order to add these files to the remote Git repository so that Git can track them.</p>
 </div>
 </div>
 <div id="git-commit" class="section level2">
 <h2><span class="header-section-number">2.2</span> <code>git commit</code></h2>
-<p>The <code>commit</code> command actually saves any changes to files you made. In conjunction with <code>git add</code>, the <code>commit</code> command will save all files that you have previously added to the staging area.</p>
-<p>Each commit is a snapshot, or a saved state, of your repository. Commits also require messages or captions to go along with them, usually describing the kinds of changes made.</p>
-<p>Commit messages are meant to help you, the user, identify different commits, so you should choose a helpful commit message.</p>
-<p>This is beneficial if later on you are looking at all of your previous commits and want to see what changes you made in each one. Because these commit messages are so useful, there are two ways to write them.</p>
+<p>The <code>commit</code> command actually saves any changes to files you made (Step 4). In conjunction with <code>git add</code>, the <code>commit</code> command will save all files that you have previously added to the staging area. Each commit is a snapshot, or a saved state, of your repository. Commits also require messages or captions to go along with them, usually describing the kinds of changes made.</p>
+<p>Commit messages are meant to help you, the user, identify different commits, so you should choose a helpful commit message. This is beneficial if later on you are looking at all of your previous commits and want to see what changes you made in each one. Because these commit messages are so useful, there are two ways to write them.</p>
 <p>Before proceeding, make sure that you have run <code>git add</code> to stage all of the changes you want to commit.</p>
 <div id="command-line-3" class="section level3">
 <h3><span class="header-section-number">2.2.1</span> Command Line</h3>
-<p>There are two different ways of making a commit:</p>
+<p>First, open Terminal and navigate to desired directory:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">cd</span> ~/cmu/76270/project4/github-instructions/</code></pre>
+<p>Now you can commit. There are two different ways of making a commit:</p>
 <ol style="list-style-type: decimal">
 <li><p>One-line commit message</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> commit -m <span class="st">&quot;Update add, commit, status sections in draft&quot;</span></code></pre></li>
@@ -245,14 +247,17 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="git-status" class="section level2">
 <h2><span class="header-section-number">2.3</span> <code>git status</code></h2>
-<p>The <code>status</code> command allows you to display any changes you have made to the directory you are currently working in. It details which changes have been staged (using <code>git add</code>), which changes have not, and which files are not being tracked by Git.</p>
+<p>The <code>status</code> command allows you to display any changes you have made to the directory you are currently working in (Step 2). It details which changes have been staged (using <code>git add</code>), which changes have not, and which files are not being tracked by Git.</p>
 <p>Essentially, you will be able to see which files Git will save if you were to commit. This allows you to first, see which files you have changed, and second, confirm all the files you want/don’t want to track.</p>
+<p><img src="img/git-status.png" width="100%" style="display: block; margin: auto;" /></p>
 <div id="workflow-1" class="section level3">
 <h3><span class="header-section-number">2.3.1</span> Workflow</h3>
 <p>Going back to the high level procedure of how to make changes, here is an example of how to use these commands in conjunction.</p>
-<p>Suppose I am working on a repository called <code>github-instructions</code> and I have just made changes to <code>README.md</code> and <code>draft.Rmd</code>, deleted a few image files, and also added new image files.</p>
-<p>Using <code>git status</code> gives me a summary of the files I have changed, and further <code>git add</code> can move these changes to the staging area to be committed.</p>
-<p>Using <code>git status</code> once again will now display an updates summary displayed that the files are now in the staging area. Finally, I can save these changes with a one-line commit message.</p>
+<p>Suppose we are working on a repository called <code>github-instructions</code> and we have just made changes to <code>README.md</code> and <code>draft.Rmd</code>, deleted a few image files, and also added new image files.</p>
+<p>First, open Terminal and navigate to desired directory:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">cd</span> ~/cmu/76270/project4/github-instructions/</code></pre>
+<p>Using <code>git status</code> gives us a summary of the files we have changed, and further <code>git add</code> can move these changes to the staging area to be committed.</p>
+<p>Using <code>git status</code> once again will now display an updates summary displayed that the files are now in the staging area. Finally, we can save these changes with a one-line commit message.</p>
 <p><img src="img/git-workflow.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>And just like that, we have successfully saved changes to our repository!</p>
 

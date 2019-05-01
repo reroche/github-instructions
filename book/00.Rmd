@@ -22,9 +22,11 @@
 
 ## Workflow {-}
 
-To get a better idea of how this process might work in its use cases, here is an example of how the tool is commonly used.
+Git is often used by multiple users to collaborate on a coding project. To get a better idea of how this process might work in its use cases, here is an example of how Git is commonly used.
 
 Consider the case where two users want to create a repository, work on some of the files individually, and combine their changes for the final product. This can be accomplished by performing the following steps. An illustration of how these commands interact with the actual repository is also included below.
+
+For more information on how to use these commands, please see the detailed instructions that follow.
 
 
 (1) One of the users calls `git init` to create the repository.

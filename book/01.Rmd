@@ -8,7 +8,7 @@ The `init` command creates an empty git repository -- a hidden `.git` directory 
 
 To initialize a repository from the command line:
 
-1. Navigate to desired parent directory:
+1. Open Terminal, and navigate to desired parent directory:
   - *This directory will contain the git repository.*
 
     ```bash
@@ -98,7 +98,7 @@ The repository for this instructions, for example, is available at [`https://git
 
 To clone a repository from the command line:
 
-1. Navigate to the desired parent directory.
+1. Open Terminal, and navigate to desired parent directory:
 
     ```bash
     $ cd ~/cmu/76270/project4/

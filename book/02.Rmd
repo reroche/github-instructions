@@ -20,7 +20,13 @@ However, using the `add` command does not actually save the changes yet. That fu
 
 ### Command Line
 
-You can add files in terminal either individually or all at once.
+First, open Terminal and navigate to desired directory:
+
+```bash
+$ cd ~/cmu/76270/project4/github-instructions/
+```
+
+Now you are ready to add files. You can add files in terminal either individually or all at once.
 
 (1) Adding files individually _(NOTE: If you include multiple files, they must be separated by a space.)_ For example, this command will add `README.md` and `book/02.Rmd` to the staging area:
 
@@ -29,7 +35,7 @@ You can add files in terminal either individually or all at once.
     ```
 
 
-(2) Adding all tracked and untracked files (new, modified, and deleted)
+(2) Adding all tracked and untracked files in this repository (new, modified, and deleted)
 
     ```bash
     $ git add -A
@@ -48,7 +54,13 @@ Before proceeding, make sure that you have run `git add` to stage all of the cha
 
 ### Command Line
 
-There are two different ways of making a commit:
+First, open Terminal and navigate to desired directory:
+
+```bash
+$ cd ~/cmu/76270/project4/github-instructions/
+```
+
+Now you can commit. There are two different ways of making a commit:
 
 (1) One-line commit message
 
@@ -73,9 +85,11 @@ The `status` command allows you to display any changes you have made to the dire
 
 Essentially, you will be able to see which files Git will save if you were to commit. This allows you to first, see which files you have changed, and second, confirm all the files you want/don't want to track.
 
+
 ```{r}
 p("img/git-status.png")
 ```
+
 
 ### Workflow
 
@@ -83,7 +97,13 @@ Going back to the high level procedure of how to make changes, here is an exampl
 
 Suppose we are working on a repository called `github-instructions` and we have just made changes to `README.md` and `draft.Rmd`, deleted a few image files, and also added new image files.
 
-Using `git status` gives me a summary of the files we have changed, and further `git add` can move these changes to the staging area to be committed.
+First, open Terminal and navigate to desired directory:
+
+```bash
+$ cd ~/cmu/76270/project4/github-instructions/
+```
+
+Using `git status` gives us a summary of the files we have changed, and further `git add` can move these changes to the staging area to be committed.
 
 Using `git status` once again will now display an updates summary displayed that the files are now in the staging area. Finally, we can save these changes with a one-line commit message.
 
@@ -92,3 +112,4 @@ p("img/git-workflow.png")
 ```
 
 And just like that, we have successfully saved changes to our repository!
+

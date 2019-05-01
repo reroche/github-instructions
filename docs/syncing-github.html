@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>3 Syncing your local files with Github (Cyrus) | Project 4: Github Instructions – Draft</title>
-  <meta name="description" content="3 Syncing your local files with Github (Cyrus) | Project 4: Github Instructions – Draft">
+  <title>3 Syncing your local files with Github (Cyrus) | Project 4: Github Instructions</title>
+  <meta name="description" content="3 Syncing your local files with Github (Cyrus) | Project 4: Github Instructions">
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="3 Syncing your local files with Github (Cyrus) | Project 4: Github Instructions – Draft" />
+  <meta property="og:title" content="3 Syncing your local files with Github (Cyrus) | Project 4: Github Instructions" />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +17,7 @@
   <meta name="github-repo" content="reroche/github-instructions" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3 Syncing your local files with Github (Cyrus) | Project 4: Github Instructions – Draft" />
+  <meta name="twitter:title" content="3 Syncing your local files with Github (Cyrus) | Project 4: Github Instructions" />
   
   
   
@@ -25,7 +25,7 @@
 <meta name="author" content="Cyrus Daruwala, Xiong-Fei Du, Elias Roche, Kylee Santos">
 
 
-<meta name="date" content="2019-04-29">
+<meta name="date" content="2019-05-01">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -131,7 +131,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#who-this-guide-is-for"><i class="fa fa-check"></i>Who This Guide Is For</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#why-should-i-learn-git"><i class="fa fa-check"></i>Why Should I Learn Git?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#why-should-i-learn-git"><i class="fa fa-check"></i>Why Should I Learn Git</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#what-you-need-to-get-started"><i class="fa fa-check"></i>What You Need To Get Started</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="terminology-and-workflow.html"><a href="terminology-and-workflow.html"><i class="fa fa-check"></i>Terminology and Workflow</a><ul>
@@ -190,7 +190,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Project 4: Github Instructions – Draft</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Project 4: Github Instructions</a>
           </h1>
         </div>
 
@@ -206,7 +206,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="command-line-4" class="section level3">
 <h3><span class="header-section-number">3.1.1</span> Command Line</h3>
 <ol style="list-style-type: decimal">
-<li><p>Navigate to desired directory:</p>
+<li><p>Open Terminal, and navigate to desired directory:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">cd</span> ~/cmu/76270/project4/github-instructions/</code></pre></li>
 <li><p>Before continuing, make sure that you have committed your changes you want to push using <code>git commit</code>. To check the number of unpushed local commits:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> status</code></pre>
@@ -229,13 +229,16 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">3.2</span> <code>git pull</code></h2>
 <p>The <code>git pull</code> command is used to transfer changes pushed by other users on the remote repository to the user’s local repository. This allows you to view everyone else’s pushed changes in your local repo.</p>
 <ol style="list-style-type: decimal">
-<li><p>Navigate to desired directory:</p>
+<li><p>Open Terminal, and navigate to desired directory:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">cd</span> ~/cmu/76270/project4/github-instructions/</code></pre></li>
 <li><p>To obtain changes made by other users:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> pull</code></pre>
-<p>The resulting terminal output:
+<p>If we succeed, we will see the resulting terminal output:
 <img src="img/git-pull.PNG" width="100%" style="display: block; margin: auto;" /></p>
-<p>Note that the green <code>+</code> represents a line added and a red <code>-</code> represents a line deleted.</p></li>
+<p>Note that the green <code>+</code> represents a line added and a red <code>-</code> represents a line deleted.</p>
+<p>However, note that sometimes, <code>git pull</code> is unsuccessful. Usually, this is because the files that we have made local changes that the remote repository does not know about. This case is typically exemplified with the following error message:
+<img src="img/git-pull-error.PNG" width="100%" style="display: block; margin: auto;" /></p>
+<p>In that case, we must first commit our local changes using <code>git add</code> and <code>git commit</code> as <a href="making-changes.html">previously specified</a>, or we must stash these changes using <code>git stash</code>, which will be explained our <a href="tools-local.html">upcoming section</a>. After we have done so, we can try <code>git pull</code> again.</p></li>
 </ol>
 
 </div>

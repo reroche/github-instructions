@@ -2,13 +2,13 @@
 
 ## `git stash`
 
-The `stash` command stores away your current local changes to revert to the previous commit. This is typically done when you have made changes to a repository that you have not committed, but want to undo.
+The `git stash` command stores away your current local changes to revert to the previous commit. This is typically done when you have made changes to a repository that you have not committed, but want to undo.
 
 ### Command Line
 
-Suppose you already have local changes in the repository that you want to stash away. To stash changes in command line:
+Suppose you already have local changes in the repository that you want to stash away. One case you may want to do this is if there are local, uncommitted changes in your repository, and you want to pull the latest changes using `git pull`. To stash changes in command line:
 
-1. Navigate to desired directory:
+1. Open Terminal, and navigate to desired directory:
 
     ```bash
     $ cd ~/cmu/76270/project4/github-instructions/
@@ -29,13 +29,13 @@ Suppose you already have local changes in the repository that you want to stash 
 
 ## `git log`
 
-The `log` command allows you to see the history of commits made to your repository.
+The `git log` command allows you to see the history of commits made to your repository.
 
 ### Command Line
 
 To see the history of commits:
 
-1. Navigate to desired directory:
+1. Open Terminal, and navigate to desired directory:
 
     ```bash
     $ cd ~/cmu/76270/project4/github-instructions/
@@ -79,13 +79,13 @@ p("img/github-diffs.PNG")
 
 ## `git diff`
 
-The `diff` command allows you to see local changes you have made, but not yet committed, to your repository.
+The `git diff` command allows you to see local changes you have made, but not yet committed, to your repository.
 
 ### Command Line
 
 To see your local changes:
 
-1. Navigate to desired directory:
+1. Open Terminal, and navigate to desired directory:
 
     ```bash
     $ cd ~/cmu/76270/project4/github-instructions/

@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Terminology and Workflow | Project 4: Github Instructions – Draft</title>
-  <meta name="description" content="Terminology and Workflow | Project 4: Github Instructions – Draft">
+  <title>Terminology and Workflow | Project 4: Github Instructions</title>
+  <meta name="description" content="Terminology and Workflow | Project 4: Github Instructions">
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="Terminology and Workflow | Project 4: Github Instructions – Draft" />
+  <meta property="og:title" content="Terminology and Workflow | Project 4: Github Instructions" />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +17,7 @@
   <meta name="github-repo" content="reroche/github-instructions" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Terminology and Workflow | Project 4: Github Instructions – Draft" />
+  <meta name="twitter:title" content="Terminology and Workflow | Project 4: Github Instructions" />
   
   
   
@@ -25,7 +25,7 @@
 <meta name="author" content="Cyrus Daruwala, Xiong-Fei Du, Elias Roche, Kylee Santos">
 
 
-<meta name="date" content="2019-04-29">
+<meta name="date" content="2019-05-01">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -131,7 +131,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#who-this-guide-is-for"><i class="fa fa-check"></i>Who This Guide Is For</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#why-should-i-learn-git"><i class="fa fa-check"></i>Why Should I Learn Git?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#why-should-i-learn-git"><i class="fa fa-check"></i>Why Should I Learn Git</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#what-you-need-to-get-started"><i class="fa fa-check"></i>What You Need To Get Started</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="terminology-and-workflow.html"><a href="terminology-and-workflow.html"><i class="fa fa-check"></i>Terminology and Workflow</a><ul>
@@ -190,7 +190,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Project 4: Github Instructions – Draft</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Project 4: Github Instructions</a>
           </h1>
         </div>
 
@@ -279,21 +279,22 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="workflow" class="section level2 unnumbered">
 <h2>Workflow</h2>
-<p>To get a better idea of how this process might work in its use cases, consider the following series of events that is commonly used with this tool.</p>
-<p>Two users want to create a repository, work on some of the files individually, and combine their changes for the final product.</p>
+<p>Git is often used by multiple users to collaborate on a coding project. To get a better idea of how this process might work in its use cases, here is an example of how Git is commonly used.</p>
+<p>Consider the case where two users want to create a repository, work on some of the files individually, and combine their changes for the final product. This can be accomplished by performing the following steps. An illustration of how these commands interact with the actual repository is also included below.</p>
+<p>For more information on how to use these commands, please see the detailed instructions that follow.</p>
 <ol style="list-style-type: decimal">
 <li><p>One of the users calls <code>git init</code> to create the repository.</p></li>
-<li><p>User 1 calls <code>git clone</code> to copy the created remote repository so that they can work on their local computer.</p></li>
-<li><p>User 2 also calls <code>git clone</code> to copy the created remote repository locally.</p></li>
-<li><p>User 1 starts the progress by adding some files to the repository.</p></li>
-<li><p>User 1 calls <code>git add</code> to add these new files to the staging area so that git knows which files should be saved.</p></li>
-<li><p>User 1 calls <code>git commit</code> to save the changes in the staging area into a commit.</p></li>
-<li><p>User 1 calls <code>git push</code> to upload their changes from their local computer to the remote repository so both users can see the changes.</p></li>
-<li><p>User 2 calls <code>git pull</code> to download the changes made from the remote repository to their local computer and works on the latest version of the repository.</p></li>
-<li><p>User 2 edits some of the files and creates their own files.</p></li>
-<li><p>User 2 calls <code>git add</code> to include these files in the staging area.</p></li>
-<li><p>User 2 calls <code>git commit</code> to save the changes locally into a commit.</p></li>
-<li><p>User 2 calls <code>git push</code> to upload their changes to the remote repository for both users to see.</p></li>
+<li><p><strong>User 1</strong> calls <code>git clone</code> to copy the created remote repository so that they can work on their local computer.</p></li>
+<li><p><strong>User 2</strong> also calls <code>git clone</code> to copy the created remote repository locally.</p></li>
+<li><p><strong>User 1</strong> starts the project by adding some files to the repository.</p></li>
+<li><p><strong>User 1</strong> calls <code>git add</code> to add these new files to the staging area so that git knows which files should be saved.</p></li>
+<li><p><strong>User 1</strong> calls <code>git commit</code> to save the changes in the staging area into a commit.</p></li>
+<li><p><strong>User 1</strong> calls <code>git push</code> to upload their changes from their local computer to the remote repository so both users can see the changes.</p></li>
+<li><p><strong>User 2</strong> calls <code>git pull</code> to download the changes made from the remote repository to their local computer and works on the latest version of the repository.</p></li>
+<li><p><strong>User 2</strong> edits some of the files and creates their own files.</p></li>
+<li><p><strong>User 2</strong> calls <code>git add</code> to include these files in the staging area.</p></li>
+<li><p><strong>User 2</strong> calls <code>git commit</code> to save the changes locally into a commit.</p></li>
+<li><p><strong>User 2</strong> calls <code>git push</code> to upload their changes to the remote repository for both users to see.</p></li>
 </ol>
 <p>This workflow is also detailed in the diagram below:</p>
 <p><img src="img/git-flowchart.png" width="100%" style="display: block; margin: auto;" /></p>

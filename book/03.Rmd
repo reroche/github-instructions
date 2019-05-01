@@ -7,7 +7,7 @@ The `git push` command is used to upload your commits from a local repository to
 
 ### Command Line
 
-1. Navigate to desired directory:
+1. Open Terminal, and navigate to desired directory:
 
     ```bash
     $ cd ~/cmu/76270/project4/github-instructions/
@@ -47,7 +47,7 @@ p("img/git-status-postpush.PNG")
 
 The `git pull` command is used to transfer changes pushed by other users on the remote repository to the user's local repository. This allows you to view everyone else's pushed changes in your local repo.
 
-1. Navigate to desired directory:
+1. Open Terminal, and navigate to desired directory:
 
     ```bash
     $ cd ~/cmu/76270/project4/github-instructions/
@@ -59,10 +59,17 @@ The `git pull` command is used to transfer changes pushed by other users on the 
     $ git pull
     ```
 
-    The resulting terminal output:
+    If we succeed, we will see the resulting terminal output:
 ```{r}
 p("img/git-pull.PNG")
 ```
 
     Note that the green `+` represents a line added and a red `-` represents a line deleted.
+    
+    However, note that sometimes, `git pull` is unsuccessful. Usually, this is because the files that we have made local changes that the remote repository does not know about. This case is typically exemplified with the following error message:
+```{r}
+p("img/git-pull-error.PNG")
+```
+
+    In that case, we must first commit our local changes using `git add` and `git commit` as [previously specified](making-changes.html), or we must stash these changes using `git stash`, which will be explained our [upcoming section](tools-local.html). After we have done so, we can try `git pull` again.
 

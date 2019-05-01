@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>4 Tools for Working Locally (Xiong-Fei) | Project 4: Github Instructions – Draft</title>
-  <meta name="description" content="4 Tools for Working Locally (Xiong-Fei) | Project 4: Github Instructions – Draft">
+  <title>4 Tools for Working Locally (Xiong-Fei) | Project 4: Github Instructions</title>
+  <meta name="description" content="4 Tools for Working Locally (Xiong-Fei) | Project 4: Github Instructions">
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="4 Tools for Working Locally (Xiong-Fei) | Project 4: Github Instructions – Draft" />
+  <meta property="og:title" content="4 Tools for Working Locally (Xiong-Fei) | Project 4: Github Instructions" />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +17,7 @@
   <meta name="github-repo" content="reroche/github-instructions" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4 Tools for Working Locally (Xiong-Fei) | Project 4: Github Instructions – Draft" />
+  <meta name="twitter:title" content="4 Tools for Working Locally (Xiong-Fei) | Project 4: Github Instructions" />
   
   
   
@@ -25,7 +25,7 @@
 <meta name="author" content="Cyrus Daruwala, Xiong-Fei Du, Elias Roche, Kylee Santos">
 
 
-<meta name="date" content="2019-04-29">
+<meta name="date" content="2019-05-01">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -131,7 +131,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#who-this-guide-is-for"><i class="fa fa-check"></i>Who This Guide Is For</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#why-should-i-learn-git"><i class="fa fa-check"></i>Why Should I Learn Git?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#why-should-i-learn-git"><i class="fa fa-check"></i>Why Should I Learn Git</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#what-you-need-to-get-started"><i class="fa fa-check"></i>What You Need To Get Started</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="terminology-and-workflow.html"><a href="terminology-and-workflow.html"><i class="fa fa-check"></i>Terminology and Workflow</a><ul>
@@ -190,7 +190,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Project 4: Github Instructions – Draft</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Project 4: Github Instructions</a>
           </h1>
         </div>
 
@@ -202,12 +202,12 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">4</span> Tools for Working Locally (Xiong-Fei)</h1>
 <div id="git-stash" class="section level2">
 <h2><span class="header-section-number">4.1</span> <code>git stash</code></h2>
-<p>The <code>stash</code> command stores away your current local changes to revert to the previous commit. This is typically done when you have made changes to a repository that you have not committed, but want to undo.</p>
+<p>The <code>git stash</code> command stores away your current local changes to revert to the previous commit. This is typically done when you have made changes to a repository that you have not committed, but want to undo.</p>
 <div id="command-line-5" class="section level3">
 <h3><span class="header-section-number">4.1.1</span> Command Line</h3>
-<p>Suppose you already have local changes in the repository that you want to stash away. To stash changes in command line:</p>
+<p>Suppose you already have local changes in the repository that you want to stash away. One case you may want to do this is if there are local, uncommitted changes in your repository, and you want to pull the latest changes using <code>git pull</code>. To stash changes in command line:</p>
 <ol style="list-style-type: decimal">
-<li><p>Navigate to desired directory:</p>
+<li><p>Open Terminal, and navigate to desired directory:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">cd</span> ~/cmu/76270/project4/github-instructions/</code></pre></li>
 <li><p>Clear uncommitted changes:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> stash</code></pre>
@@ -218,12 +218,12 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="git-log" class="section level2">
 <h2><span class="header-section-number">4.2</span> <code>git log</code></h2>
-<p>The <code>log</code> command allows you to see the history of commits made to your repository.</p>
+<p>The <code>git log</code> command allows you to see the history of commits made to your repository.</p>
 <div id="command-line-6" class="section level3">
 <h3><span class="header-section-number">4.2.1</span> Command Line</h3>
 <p>To see the history of commits:</p>
 <ol style="list-style-type: decimal">
-<li><p>Navigate to desired directory:</p>
+<li><p>Open Terminal, and navigate to desired directory:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">cd</span> ~/cmu/76270/project4/github-instructions/</code></pre></li>
 <li><p>To view commit history:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> log</code></pre>
@@ -251,12 +251,12 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="git-diff" class="section level2">
 <h2><span class="header-section-number">4.3</span> <code>git diff</code></h2>
-<p>The <code>diff</code> command allows you to see local changes you have made, but not yet committed, to your repository.</p>
+<p>The <code>git diff</code> command allows you to see local changes you have made, but not yet committed, to your repository.</p>
 <div id="command-line-7" class="section level3">
 <h3><span class="header-section-number">4.3.1</span> Command Line</h3>
 <p>To see your local changes:</p>
 <ol style="list-style-type: decimal">
-<li><p>Navigate to desired directory:</p>
+<li><p>Open Terminal, and navigate to desired directory:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">cd</span> ~/cmu/76270/project4/github-instructions/</code></pre></li>
 <li><p>To view local changes:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> diff</code></pre>
