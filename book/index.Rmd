@@ -1,5 +1,5 @@
 ---
-title: "Project 4: Github Instructions"
+title: "GitHub for CMU Students"
 author: "Cyrus Daruwala, Xiong-Fei Du, Elias Roche, Kylee Santos"
 date: "`r gsub(' 0', ' ', format(Sys.Date(), '%B %d, %Y'))`"
 site: bookdown::bookdown_site
