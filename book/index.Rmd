@@ -41,11 +41,11 @@ We use GitHub for three main reasons:
 
 - **Free Private Repositories:** Using your CMU email address (or any address with a `.edu` suffix) when creating your account will grant you free access to a GitHub Premium account, which allows you to host private repositories.
 - **Ease of Collaboration:** Hosting the repository online allows members of a team to work on the same code and make changes in an organized manner.
-- **Popularity:** GitHub is the most popular repository hosting service. Many popular applications, packages, and libraries are hosted on GitHub. So having a GitHub account allows you to copy versions of repositories and contribute to these projects.Even this website is a repository hosted on GitHub, which can be accessed [here](https://github.com/reroche/github-instructions/).
+- **Popularity:** GitHub is the most popular repository hosting service. Many popular applications, packages, and libraries are hosted on GitHub. So having a GitHub account allows you to copy versions of repositories and contribute to these projects. Even this website is a repository hosted on GitHub, which can be accessed [here](https://github.com/reroche/github-instructions/).
 
 ## What You Need To Follow This Guide {-}
 
 (1) **A Unix-like environment:** This guide contains many commands that can be copied directly into Unix-like command lines. **MacOS** and **Linux** are both Unix-like environments. A Unix-like environment can be set up in Windows by installing **Git Bash**, which can be downloaded [here](https://gitforwindows.org/).
 
-(2) **A GitHub account:** A GitHub account is free and will allow you to host unlimited public repositories. It is strongly encouraged that you use your CMU email address to create an account before proceeding with this guide to have access to private repositories. Click [here](https://github.com/join?source=header-home) to create your account.
+(2) **A GitHub account:** A GitHub account is free and will allow you to host unlimited public repositories. It is strongly encouraged that you use your CMU email address to create an account before proceeding with this guide to have access to private repositories as well. Click [here](https://github.com/join?source=header-home) to create your account.
 

@@ -6,7 +6,7 @@ In this section we will be showing you how to set up Git repositories, how to ho
 
 The `init` command creates an empty git repository -- a hidden `.git` directory containing everything you need for version control in this repository.
 
-**When do I use this command?:** Use `git init` whenever you want to turn a directory into a Git repository.
+**When do I use this command?:** Use `git init` whenever you want to turn an existing directory into a new Git repository.
 
 ### Command Line {-}
 
@@ -131,7 +131,7 @@ To clone or download a repository from Github:
 
 > `https://github.com/reactjs/reactjs.org`
 
-2. Click the green "Clone or download" button:
+2. Click the green "**Clone or download**" button:
 
 ```{r}
 p("img/clone-repository.png")
