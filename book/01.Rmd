@@ -90,13 +90,15 @@ p("img/create-repository.png")
 
 ## `git clone`
 
-The `clone` command creates a copy of a of a repository into a newly created directory.
+The `clone` command creates a copy of a repository into a newly created directory.
 
 All repositories on GitHub have a unique URL, in the format:
 
-> `https://github.com/`_username_`/`_repository-name_`.git`
+> `https://github.com/`**username**`/`**repository-name**`.git`
 
-The repository for this instructions, for example, is available at [`https://github.com/reroche/github-instructions`](https://github.com/reroche/github-instructions).
+The repository for this website, for example, is available at [`https://github.com/reroche/github-instructions`](https://github.com/reroche/github-instructions).
+
+**When do I use this command?:** Use `git clone` whenever you want to download an existing repository into a new directory. If a team member has set up a repository with your code, you use this command to download the repository and start collaborating.
 
 ### Command Line {-}
 
@@ -115,6 +117,8 @@ To clone a repository from the command line:
     $ git clone https://github.com/reroche/github-instructions.git
     ```
 
+This repository has now been downloaded to `~/cmu/76270/project4/github-instructions`.
+
 ### GitHub {-}
 
 The online interface allows you to easily browse and copy repository URLs to clone via the command line.
@@ -122,6 +126,8 @@ The online interface allows you to easily browse and copy repository URLs to clo
 To clone or download a repository from Github:
 
 1. Navigate to the repository URL:
+
+  - *For example:*
 
 > `https://github.com/reactjs/reactjs.org`
 
@@ -141,9 +147,13 @@ p("img/clone-repository.png")
 
 Forking is copying a repository that belongs to another user into your repositories, granting you ownership permissions over that repository.
 
-Forking cannot be done via the command line.
+For example, forking the repository at `https://github.com/reactjs/reactjs.org` will create a copy of this repository at `https://github.com/`**your-username**`/reactjs.org`. You will have ownership over the repository, allowing you to make changes to your version of the code.
 
-To fork a repository on Github, simply click the "Fork" button on the top right of a repository's home page.
+Note that forking is GitHub feature and not a Git command, so forking cannot be done via the command line.
+
+**When do I use this feature?:** Fork a repository whenever you want to make changes to a repository that is not owned by anyone in your team. For example, if there is a repository with scaffold code for your own project, you can fork that repository to start making your own changes with your team.
+
+To fork a repository on GitHub, simply click the "Fork" button on the top right of a repository's home page.
 
 ```{r}
 p("img/fork-repository.png")
