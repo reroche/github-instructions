@@ -1,4 +1,4 @@
-# Syncing your local files with Github {#syncing-github}
+# Syncing your Local Files with GitHub {#syncing-github}
 
 ## `git push`
 
@@ -65,7 +65,7 @@ p("img/git-pull.PNG")
 ```
 
     Note that the green `+` represents a line added and a red `-` represents a line deleted.
-    
+
     However, note that sometimes, `git pull` is unsuccessful. Usually, this is because the files that we have made local changes that the remote repository does not know about. This case is typically exemplified with the following error message:
 ```{r}
 p("img/git-pull-error.PNG")
