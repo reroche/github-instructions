@@ -68,24 +68,24 @@ p("img/create-repository.png")
 ```
 
 
-6. Finally, set up the repository:
+6. Finally, set up the repository. For example, let `reroche` be the username of our GitHub account and `github-instructions` be the name of our repository:
 
 - _You can create a new repository on the command line by running:_
 
     ```bash
-    echo "# github-instructions" >> README.md
-    git init
-    git add README.md
-    git commit -m "first commit"
-    git remote add origin git@github.com:reroche/github-instructions.git
-    git push -u origin master
+    $ echo "# github-instructions" >> README.md
+    $ git init
+    $ git add README.md
+    $ git commit -m "first commit"
+    $ git remote add origin git@github.com:reroche/github-instructions.git
+    $ git push -u origin master
     ```
 
 - _Or you can import an existing repository on your computer into this GitHub new repository by running:_
 
     ```bash
-    git remote add origin git@github.com:reroche/github-instructions.git
-    git push -u origin master
+    $ git remote add origin git@github.com:reroche/github-instructions.git
+    $ git push -u origin master
     ```
 
 - _More details regarding these Git commands are discussed in later sections._
@@ -125,7 +125,7 @@ This repository has now been downloaded to `~/cmu/76270/project4/github-instruct
 
 The online interface allows you to easily browse and copy repository URLs to clone via the command line.
 
-To clone or download a repository from Github:
+To clone or download a repository from GitHub:
 
 1. Navigate to the repository URL:
 
@@ -153,7 +153,7 @@ For example, forking the repository at `https://github.com/reactjs/reactjs.org` 
 
 Note that forking is GitHub feature and not a Git command, so forking cannot be done via the command line.
 
-**When do I use this feature?:** Fork a repository whenever you want to make changes to a repository that is not owned by anyone in your team. For example, if there is a repository with scaffold code for your own project, you can fork that repository to start making your own changes with your team.
+**When do I use this feature?** You can fork a repository whenever you want to make changes to a repository that is not owned by anyone in your team. For example, if there is a repository with scaffold code for your own project, you can fork that repository to start making your own changes with your team.
 
 To fork a repository on GitHub, simply click the "Fork" button on the top right of a repository's home page.
 

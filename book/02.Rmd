@@ -14,7 +14,7 @@ In order to understand the output of `git status`, it helps to know how the comm
 
 ## `git add`
 
-The `add` command allows users to add files to the staging area (Step 3). This essentially lets Git know that you made changes to the file and you would like to save them.
+The `add` command allows users to add files to the staging area (Step 3 above). This essentially lets Git know that you made changes to the file and you would like to save them.
 
 However, using the `add` command does not actually save the changes yet. That functionality is done by `git commit`.
 
@@ -46,7 +46,7 @@ Tracked files are files that are included in the remote Git repository. So, Git 
 
 ## `git commit`
 
-The `commit` command actually saves any changes to files you made (Step 4). In conjunction with `git add`, the `commit` command will save all files that you have previously added to the staging area. Each commit is a snapshot, or a saved state, of your repository. Commits also require messages or captions to go along with them, usually describing the kinds of changes made.
+The `commit` command actually saves any changes to files you made (Step 4 above). In conjunction with `git add`, the `commit` command will save all files that you have previously added to the staging area. Each commit is a snapshot, or a saved state, of your repository. Commits also require messages or captions to go along with them, usually describing the kinds of changes made.
 
 Commit messages are meant to help you, the user, identify different commits, so you should choose a helpful commit message. This is beneficial if later on you are looking at all of your previous commits and want to see what changes you made in each one. Because these commit messages are so useful, there are two ways to write them.
 
@@ -105,7 +105,7 @@ $ cd ~/cmu/76270/project4/github-instructions/
 
 Using `git status` gives us a summary of the files we have changed, and further `git add` can move these changes to the staging area to be committed.
 
-Using `git status` once again will now display an updates summary displayed that the files are now in the staging area. Finally, we can save these changes with a one-line commit message.
+Using `git status` once again will now display an updates summary displayed that the files are now in the staging area. Finally, we can save these changes with a one-line commit message using `git commit`.
 
 ```{r}
 p("img/git-workflow.png")

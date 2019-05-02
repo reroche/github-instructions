@@ -24,7 +24,7 @@ The terminal output would look as follows:
 p("img/git-status-prepush.PNG")
 ```
 
-3. In the result above, it says that our branch (the local repository) is ahead of `origin/master` (the remote repository) by 1 commit. To push these changes:
+3. In the result above, it says that our branch (in the local repository) is ahead of `origin/master` (in the remote repository) by 1 commit. To push these changes:
 
     ```bash
     $ git push
@@ -36,7 +36,7 @@ The terminal output would look as follows:
 p("img/git-push.PNG")
 ```
 
-4. If we now check the number of unpushed local commits using `git status`, we notice that our branch is up to date (0 commits behind) with 'origin/master'.
+4. If we now check the number of unpushed local commits using `git status`, we notice that our branch is up to date (0 commits behind) with `origin/master`.
 
 ```{r}
 p("img/git-status-postpush.PNG")

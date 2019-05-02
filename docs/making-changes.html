@@ -211,7 +211,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>In order to understand the output of <code>git status</code>, it helps to know how the commands <code>git add</code> and <code>git commit</code> work first.</p>
 <div id="git-add" class="section level2">
 <h2><span class="header-section-number">2.1</span> <code>git add</code></h2>
-<p>The <code>add</code> command allows users to add files to the staging area (Step 3). This essentially lets Git know that you made changes to the file and you would like to save them.</p>
+<p>The <code>add</code> command allows users to add files to the staging area (Step 3 above). This essentially lets Git know that you made changes to the file and you would like to save them.</p>
 <p>However, using the <code>add</code> command does not actually save the changes yet. That functionality is done by <code>git commit</code>.</p>
 <div id="command-line-2" class="section level3">
 <h3><span class="header-section-number">2.1.1</span> Command Line</h3>
@@ -229,7 +229,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="git-commit" class="section level2">
 <h2><span class="header-section-number">2.2</span> <code>git commit</code></h2>
-<p>The <code>commit</code> command actually saves any changes to files you made (Step 4). In conjunction with <code>git add</code>, the <code>commit</code> command will save all files that you have previously added to the staging area. Each commit is a snapshot, or a saved state, of your repository. Commits also require messages or captions to go along with them, usually describing the kinds of changes made.</p>
+<p>The <code>commit</code> command actually saves any changes to files you made (Step 4 above). In conjunction with <code>git add</code>, the <code>commit</code> command will save all files that you have previously added to the staging area. Each commit is a snapshot, or a saved state, of your repository. Commits also require messages or captions to go along with them, usually describing the kinds of changes made.</p>
 <p>Commit messages are meant to help you, the user, identify different commits, so you should choose a helpful commit message. This is beneficial if later on you are looking at all of your previous commits and want to see what changes you made in each one. Because these commit messages are so useful, there are two ways to write them.</p>
 <p>Before proceeding, make sure that you have run <code>git add</code> to stage all of the changes you want to commit.</p>
 <div id="command-line-3" class="section level3">
@@ -258,7 +258,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>First, open Terminal and navigate to desired directory:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">cd</span> ~/cmu/76270/project4/github-instructions/</code></pre>
 <p>Using <code>git status</code> gives us a summary of the files we have changed, and further <code>git add</code> can move these changes to the staging area to be committed.</p>
-<p>Using <code>git status</code> once again will now display an updates summary displayed that the files are now in the staging area. Finally, we can save these changes with a one-line commit message.</p>
+<p>Using <code>git status</code> once again will now display an updates summary displayed that the files are now in the staging area. Finally, we can save these changes with a one-line commit message using <code>git commit</code>.</p>
 <p><img src="img/git-workflow.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>And just like that, we have successfully saved changes to our repository!</p>
 

@@ -255,19 +255,19 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <p><img src="img/create-repository.png" width="100%" style="display: block; margin: auto;" /></p>
 <ol start="6" style="list-style-type: decimal">
-<li>Finally, set up the repository:</li>
+<li>Finally, set up the repository. For example, let <code>reroche</code> be the username of our GitHub account and <code>github-instructions</code> be the name of our repository:</li>
 </ol>
 <ul>
 <li><p><em>You can create a new repository on the command line by running:</em></p>
-<pre class="sourceCode bash"><code class="sourceCode bash"><span class="bu">echo</span> <span class="st">&quot;# github-instructions&quot;</span> <span class="op">&gt;&gt;</span> README.md
-<span class="fu">git</span> init
-<span class="fu">git</span> add README.md
-<span class="fu">git</span> commit -m <span class="st">&quot;first commit&quot;</span>
-<span class="fu">git</span> remote add origin git@github.com:reroche/github-instructions.git
-<span class="fu">git</span> push -u origin master</code></pre></li>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">echo</span> <span class="st">&quot;# github-instructions&quot;</span> <span class="op">&gt;&gt;</span> README.md
+$ <span class="fu">git</span> init
+$ <span class="fu">git</span> add README.md
+$ <span class="fu">git</span> commit -m <span class="st">&quot;first commit&quot;</span>
+$ <span class="fu">git</span> remote add origin git@github.com:reroche/github-instructions.git
+$ <span class="fu">git</span> push -u origin master</code></pre></li>
 <li><p><em>Or you can import an existing repository on your computer into this GitHub new repository by running:</em></p>
-<pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">git</span> remote add origin git@github.com:reroche/github-instructions.git
-<span class="fu">git</span> push -u origin master</code></pre></li>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> remote add origin git@github.com:reroche/github-instructions.git
+$ <span class="fu">git</span> push -u origin master</code></pre></li>
 <li><p><em>More details regarding these Git commands are discussed in later sections.</em></p></li>
 </ul>
 </div>
@@ -298,7 +298,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="github-1" class="section level3 unnumbered">
 <h3>GitHub</h3>
 <p>The online interface allows you to easily browse and copy repository URLs to clone via the command line.</p>
-<p>To clone or download a repository from Github:</p>
+<p>To clone or download a repository from GitHub:</p>
 <ol style="list-style-type: decimal">
 <li>Navigate to the repository URL:</li>
 </ol>
@@ -323,7 +323,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>Forking is copying a repository that belongs to another user into your repositories, granting you ownership permissions over that repository.</p>
 <p>For example, forking the repository at <code>https://github.com/reactjs/reactjs.org</code> will create a copy of this repository at <code>https://github.com/</code><strong>your-username</strong><code>/reactjs.org</code>. You will have ownership over the repository, allowing you to make changes to your version of the code.</p>
 <p>Note that forking is GitHub feature and not a Git command, so forking cannot be done via the command line.</p>
-<p><strong>When do I use this feature?:</strong> Fork a repository whenever you want to make changes to a repository that is not owned by anyone in your team. For example, if there is a repository with scaffold code for your own project, you can fork that repository to start making your own changes with your team.</p>
+<p><strong>When do I use this feature?</strong> You can fork a repository whenever you want to make changes to a repository that is not owned by anyone in your team. For example, if there is a repository with scaffold code for your own project, you can fork that repository to start making your own changes with your team.</p>
 <p>To fork a repository on GitHub, simply click the “Fork” button on the top right of a repository’s home page.</p>
 <p><img src="img/fork-repository.png" width="100%" style="display: block; margin: auto;" /></p>
 

@@ -2,7 +2,7 @@
 
 ## `git stash`
 
-The `git stash` command stores away your current local changes to revert to the previous commit. This is typically done when you have made changes to a repository that you have not committed, but want to undo.
+The `git stash` command stores away your current local changes to revert to the previous commit. This is typically done when you have made changes to a repository that you have not committed and want to undo.
 
 ### Command Line
 
@@ -57,9 +57,9 @@ p("img/git-log.PNG")
 
 ### GitHub
 
-We can also see a log of our commits in Github. This can be done as follows:
+We can also see a log of our commits in GitHub. This can be done as follows:
 
-1. From the homepage of your Git repository on Github, click on the "Commits" tab:
+1. From the homepage of your Git repository on GitHub, click on the "Commits" tab:
 
 ```{r}
 p("img/commit-navigation.PNG")
