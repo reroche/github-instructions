@@ -43,7 +43,7 @@ We use GitHub for three main reasons:
 - **Ease of Collaboration:** Hosting the repository online allows members of a team to work on the same code and make changes in an organized manner.
 - **Popularity:** GitHub is the most popular repository hosting service. Many popular applications, packages, and libraries are hosted on GitHub. So having a GitHub account allows you to copy versions of repositories and contribute to these projects. Even this website is a repository hosted on GitHub, which can be accessed [here](https://github.com/reroche/github-instructions/).
 
-## What You Need To Follow This Guide {-}
+## What You Need To Follow This Guide {-#get-started}
 
 (1) **A Unix-like environment:** This guide contains many commands that can be copied directly into Unix-like command lines. **MacOS** and **Linux** are both Unix-like environments. A Unix-like environment can be set up in Windows by installing **Git Bash**, which can be downloaded [here](https://gitforwindows.org/).
 
